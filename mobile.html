@@ -1,0 +1,2349 @@
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Nunito:wght@700;800&amp;family=Roboto&amp;display=swap"
+	rel="stylesheet"
+/>
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<link href="/assets/custom_assets/megasite_slider.min.css" rel="stylesheet" />
+
+<!-- Basic styles -->
+<style>
+	.company-page-body {
+		background: #fff;
+	}
+
+	.company-bottom-toolbar {
+		z-index: 10;
+	}
+
+	.upscroll-arrow {
+		z-index: 20;
+	}
+
+	.top-part {
+		z-index: 5;
+	}
+
+	.company-toolbar-menu-popup {
+		z-index: 100;
+	}
+
+	.company-text-zone {
+		margin: 0 !important;
+	}
+
+	.company-navigation-slider,
+	.swiper-container_company-showcase {
+		display: none !important;
+	}
+
+	.company-footer {
+		margin-top: 0 !important;
+	}
+
+	.company-content-block {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.company-content-block__title,
+	.company-product-groups__show-more,
+	.company-favorite-product__button,
+	.discount-product {
+		display: none !important;
+	}
+</style>
+<!-- end Basic styles -->
+
+<!-- Main Page -->
+<style>
+	._customer-m-section {
+		box-sizing: border-box;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+
+	._customer-m-section * {
+		box-sizing: border-box;
+	}
+
+	._customer-m-section__container {
+		max-width: 994px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	._customer-m-cib__slider {
+		max-width: 1200px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	._customer-m-cib__slide {
+		padding: 0 !important;
+		overflow: hidden !important;
+		height: 702px !important;
+	}
+
+	._customer-m-cib__slide-1 {
+		background: url(/system/ckeditor_assets/pictures/446510/content_slide-bg-1.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-cib__slide-2 {
+		background: url(/system/ckeditor_assets/pictures/446511/content_slide-bg-2.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-cib__slide-3 {
+		background: url(/system/ckeditor_assets/pictures/446512/content_slide-bg-3.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-cib__slide-4 {
+		background: url(/system/ckeditor_assets/pictures/446513/content_slide-bg-4.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-cib__slide-container {
+		height: 100%;
+		max-width: 994px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	._customer-m-cib__slide-decor-1 {
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - 600px);
+		z-index: 1;
+	}
+
+	._customer-m-cib__slide-decor-2 {
+		position: absolute;
+		top: 0;
+		left: calc(50% + 100px);
+		z-index: 1;
+	}
+
+	._customer-m-cib__slide-decor-3 {
+		position: absolute;
+		top: 100px;
+		left: 550px;
+	}
+
+	._customer-m-cib__slide-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		max-width: 721px;
+		width: 721px;
+		margin: 124px 0 0 0;
+		height: 370px;
+		background-color: #fff;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		padding: 50px 45px;
+		position: relative;
+		z-index: 2;
+	}
+
+	._customer-m-cib__slide-title {
+		font-family: Nunito, sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	._customer-m-cib__slide-items {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+	}
+
+	._customer-m-cib__slide-items span {
+		display: block;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		margin-left: 20px;
+		padding-left: 23px;
+		box-sizing: border-box;
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	._customer-m-cib__slide-items span:nth-of-type(1) {
+		margin-left: 0 !important;
+	}
+
+	._customer-m-cib__slide-items span::before {
+		content: "";
+		display: block;
+		width: 17px;
+		height: 4px;
+		background-color: #f07c00;
+		border-radius: 4px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+
+	._customer-m-cib__slide-btn {
+		margin-top: auto;
+		width: 250px;
+		height: 50px;
+		border-radius: 4px;
+		background-color: #f07c00;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		font-style: normal;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		outline: 0;
+	}
+
+	._customer-m-cib__slide-btn:hover {
+		cursor: pointer;
+		opacity: 0.85;
+	}
+
+	._customer-m-cib__control {
+		position: relative;
+	}
+
+	._customer-m-cib__control .swiper-pagination {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: auto !important;
+		position: absolute !important;
+		bottom: 10px !important;
+		left: 50% !important;
+		right: auto !important;
+		top: auto !important;
+		transform: translateX(-50%) !important;
+		z-index: 3 !important;
+		outline: 0 !important;
+	}
+
+	._customer-m-cib__control .swiper-pagination-bullet {
+		width: 10px !important;
+		height: 10px !important;
+		border: 1px solid #f07c00 !important;
+		border-radius: 100% !important;
+		outline: 0 !important;
+		opacity: 1 !important;
+		margin: 0 3px !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		background-color: #fff !important;
+		transition: none !important;
+	}
+
+	._customer-m-cib__control .swiper-pagination-bullet-active {
+		background-color: #f07c00 !important;
+	}
+
+	._customer-m-groups {
+		padding: 50px 0;
+		background-color: #fff;
+		display: none;
+	}
+
+	._customer-m-groups__items {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	._customer-m-groups__item {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		outline: 0;
+		width: 23%;
+		margin-right: 2.66%;
+		margin-bottom: 20px;
+		text-decoration: none;
+		outline: 0;
+		padding: 10px 10px 20px 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+	}
+
+	._customer-m-groups__item:nth-of-type(4n) {
+		margin-right: 0;
+	}
+
+	._customer-m-groups__img {
+		width: 100%;
+		height: 114px;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	._customer-m-groups__img img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	._customer-m-groups__heading {
+		margin: 15px 0;
+		flex: 1;
+		color: #000 !important;
+		font-family: Nunito, sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		word-wrap: break-word;
+	}
+
+	._customer-m-groups__heading:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-m-groups__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		background-color: #fff;
+		border: 2px solid #f07c00;
+		border-radius: 4px;
+		width: 140px;
+		height: 40px;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-groups__btn:hover {
+		cursor: pointer;
+		background-color: #f07c00;
+	}
+
+	._customer-m-groups__more-btn {
+		margin: 10px 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		outline: 0;
+		background-color: #fff;
+		border: 2px solid #f07c00;
+		box-sizing: border-box;
+		border-radius: 4px;
+		width: 100%;
+		height: 40px;
+		color: #f07c00 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-groups__more-btn:hover {
+		cursor: pointer;
+		background-color: #f07c00;
+		color: #000 !important;
+	}
+
+	._customer-m-goods {
+		padding: 50px 0;
+		background-color: #ffefdd;
+		display: none;
+	}
+
+	._customer-m-goods__title {
+		color: #000;
+		font-family: Nunito, sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto;
+		max-width: max-content;
+		position: relative;
+	}
+
+	._customer-m-goods__title::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #f07c00;
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 0;
+	}
+
+	._customer-m-goods__items {
+		margin-top: 35px;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	._customer-m-goods__item {
+		display: flex;
+		flex-direction: column;
+		width: 23%;
+		margin-right: 2.66%;
+		margin-bottom: 20px;
+		padding: 10px 10px 65px 10px;
+		background-color: #fff;
+		border-radius: 10px;
+		position: relative;
+	}
+
+	._customer-m-goods__item:nth-of-type(4n) {
+		margin-right: 0;
+	}
+
+	._customer-m-goods__img {
+		display: block;
+		text-decoration: none;
+		outline: 0;
+		width: 100%;
+		height: 114px;
+		overflow: hidden;
+		border-radius: 4px;
+	}
+
+	._customer-m-goods__img img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	._customer-m-goods__heading {
+		margin-top: 15px;
+		display: block;
+		text-decoration: none;
+		outline: 0;
+		flex: 1;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		word-wrap: break-word;
+	}
+
+	._customer-m-goods__heading:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.company-products-item__price {
+		margin-top: 15px !important;
+	}
+
+	.company-products-item__price,
+	.company-products-item__price * {
+		font-size: 16px !important;
+		font-family: Inter, sans-serif !important;
+		text-transform: uppercase !important;
+		color: #f07c00 !important;
+		line-height: 1.2 !important;
+		font-weight: 700 !important;
+		text-align: center !important;
+	}
+
+	._customer-m-goods__btns {
+		width: calc(100% - 20px);
+		height: 40px;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	._customer-m-goods__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		outline: 0;
+		flex: 1;
+		height: 100%;
+		background-color: #fff;
+		border: 2px solid #f07c00;
+		border-radius: 4px;
+		width: 140px;
+		height: 40px;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-goods__btn:hover {
+		cursor: pointer;
+		background-color: #f07c00;
+	}
+
+	.tmpl-company-button-cart {
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 4px !important;
+		background: url(/system/ckeditor_assets/pictures/347159/content_product_cart.png) center center no-repeat !important;
+		background-color: #ffffff !important;
+		border: 2px solid #f07c00 !important;
+		margin: 0 0 0 5px !important;
+		padding: 0 !important;
+		outline: none !important;
+		opacity: 1 !important;
+		transition: none !important;
+	}
+
+	.tmpl-company-button-cart:before,
+	.tmpl-company-button-cart:after {
+		display: none !important;
+	}
+
+	.tmpl-company-button-cart:hover {
+		cursor: pointer;
+		background: url(/system/ckeditor_assets/pictures/347159/content_product_cart.png) center center no-repeat !important;
+		background-color: #ffffff !important;
+		opacity: 0.85 !important;
+	}
+
+	._customer-m-goods__more-btn {
+		margin: 10px 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		outline: 0;
+		background-color: transparent;
+		border: 2px solid #f07c00;
+		box-sizing: border-box;
+		border-radius: 4px;
+		width: 100%;
+		height: 40px;
+		color: #f07c00 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-goods__more-btn:hover {
+		cursor: pointer;
+		background-color: #f07c00;
+		color: #000 !important;
+	}
+
+	._customer-m-showcase {
+		padding: 50px 0;
+		background-color: #fff;
+		display: none;
+	}
+
+	._customer-m-showcase__slider {
+		overflow: hidden;
+	}
+
+	._customer-m-showcase__slide {
+		display: flex;
+		flex-direction: column;
+		padding: 80px 20px 20px 20px !important;
+		border-radius: 20px;
+		border: 2px solid #f07c00;
+		overflow: hidden;
+		text-decoration: none;
+		outline: 0;
+		position: relative;
+	}
+
+	._customer-m-showcase__slide::before {
+		content: "";
+		display: block;
+		width: 53px;
+		height: 53px;
+		background: url(/system/ckeditor_assets/pictures/446508/content_showcase-label.webp) center center no-repeat;
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		z-index: 2;
+	}
+
+	._customer-m-showcase__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	._customer-m-showcase__img::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(169.16deg, #fff 36%, rgba(255, 255, 255, 0) 70%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	._customer-m-showcase__img img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	._customer-m-showcase__heading {
+		position: relative;
+		z-index: 2;
+		color: #000 !important;
+		font-family: Nunito, sans-serif;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	._customer-m-showcase__descr {
+		margin: 15px 0 30px 0;
+		position: relative;
+		z-index: 2;
+		flex: 1;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: left;
+	}
+
+	._customer-m-showcase__btn {
+		position: relative;
+		z-index: 2;
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 195px;
+		height: 40px;
+		background-color: #f07c00;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 14px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-showcase__btn:hover {
+		cursor: pointer;
+		opacity: 0.85;
+	}
+
+	._customer-m-showcase__control {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
+	._customer-m-showcase__control .swiper-pagination {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: auto !important;
+		position: relative !important;
+		bottom: auto !important;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		outline: 0 !important;
+	}
+
+	._customer-m-showcase__control .swiper-pagination-bullet {
+		width: 10px !important;
+		height: 10px !important;
+		border: 1px solid #f07c00 !important;
+		border-radius: 100% !important;
+		outline: 0 !important;
+		opacity: 1 !important;
+		margin: 0 3px !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		background-color: #fff !important;
+		transition: none !important;
+	}
+
+	._customer-m-showcase__control .swiper-pagination-bullet-active {
+		background-color: #f07c00 !important;
+	}
+
+	._customer-m-order {
+		padding: 50px 0;
+		background: url(/system/ckeditor_assets/pictures/446503/content_order-bg.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-order__title {
+		color: #000;
+		font-family: Nunito, sans-serif;
+		font-size: 33px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-order__subtitle {
+		margin-top: 10px;
+		color: #000;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	._customer-m-order__form {
+		margin-top: 30px;
+	}
+
+	._customer-m-order__inputs {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	._customer-m-order__inputs label {
+		display: block;
+		width: 32.5%;
+		margin-bottom: 10px;
+	}
+
+	._customer-m-order__inputs label input {
+		display: block;
+		width: 100%;
+		height: 40px !important;
+		border: 2px solid #000;
+		background-color: #fff;
+		border-radius: 4px !important;
+		outline: 0;
+		padding: 0 10px;
+		color: #8d8d8d;
+		font-family: Inter, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	._customer-m-order__inputs label input::placeholder {
+		color: #8d8d8d;
+		text-transform: uppercase;
+	}
+
+	._customer-m-order__textarea-label {
+		display: block;
+		width: 100%;
+	}
+
+	._customer-m-order__textarea {
+		display: block;
+		width: 100%;
+		height: 80px !important;
+		border: 2px solid #000;
+		background-color: #fff;
+		border-radius: 4px !important;
+		outline: 0;
+		resize: none;
+		padding: 8px 10px 3px 10px;
+		color: #8d8d8d;
+		font-family: Inter, sans-serif;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+
+	._customer-m-order__textarea::placeholder {
+		color: #8d8d8d;
+		text-transform: uppercase;
+	}
+
+	._customer-m-order__btns {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	._customer-m-order__btns-submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 49.5%;
+		height: 40px;
+		border-radius: 4px;
+		background-color: #f07c00;
+		border: 2px solid #f07c00;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		font-style: normal;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		outline: 0;
+	}
+
+	._customer-m-order__btns-submit:hover {
+		cursor: pointer;
+		opacity: 0.85;
+	}
+
+	._customer-m-order__btns-submit:disabled:hover {
+		cursor: not-allowed;
+	}
+
+	._customer-m-order__btns-file {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 49.5%;
+		height: 40px;
+		border-radius: 4px;
+		background-color: #fff;
+		border: 2px solid #f07c00;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	._customer-m-order__btns-file img {
+		width: 24px;
+	}
+
+	._customer-m-order__btns-file:hover {
+		cursor: pointer;
+		opacity: 0.85;
+	}
+
+	._customer-m-order__btns-file:disabled:hover {
+		cursor: not-allowed;
+	}
+
+	._customer-m-skills {
+		padding: 50px 0;
+		background: url(/system/ckeditor_assets/pictures/446509/content_skills-bg.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-skills__title {
+		color: #fff;
+		font-family: Nunito, sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto;
+		max-width: max-content;
+		position: relative;
+	}
+
+	._customer-m-skills__title::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #f07c00;
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 0;
+	}
+
+	._customer-m-skills__slider {
+		margin-top: 35px;
+		overflow: hidden;
+	}
+
+	._customer-m-skills__icon {
+		display: block;
+		margin: 0 auto;
+	}
+
+	._customer-m-skills__descr {
+		margin-top: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	._customer-m-skills__control {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
+	._customer-m-skills__control .swiper-pagination {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: auto !important;
+		position: relative !important;
+		bottom: auto !important;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		outline: 0 !important;
+	}
+
+	._customer-m-skills__control .swiper-pagination-bullet {
+		width: 10px !important;
+		height: 10px !important;
+		border: 1px solid #f07c00 !important;
+		border-radius: 100% !important;
+		outline: 0 !important;
+		opacity: 1 !important;
+		margin: 0 3px !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		background-color: #fff !important;
+		transition: none !important;
+	}
+
+	._customer-m-skills__control .swiper-pagination-bullet-active {
+		background-color: #f07c00 !important;
+	}
+
+	._customer-m-news {
+		padding: 50px 0;
+		background-color: #fff;
+		display: none;
+	}
+
+	._customer-m-news__title {
+		color: #000;
+		font-family: Nunito, sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto;
+		max-width: max-content;
+		position: relative;
+	}
+
+	._customer-m-news__title::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #f07c00;
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 0;
+	}
+
+	._customer-m-news__slider {
+		margin-top: 35px;
+		overflow: hidden;
+	}
+
+	._customer-m-news__slide {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		outline: 0;
+		border: 1px solid rgba(147, 165, 207, 0.5);
+		border-radius: 10px;
+		padding: 0 0 20px 0 !important;
+	}
+
+	._customer-m-news__img {
+		display: block;
+		width: 100%;
+		height: 190px;
+		overflow: hidden;
+	}
+
+	._customer-m-news__img img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	._customer-m-news__heading {
+		margin-top: 15px;
+		padding: 0 10px;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-news__heading:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-m-news__date {
+		margin-top: 15px;
+		padding: 0 10px;
+		color: #ff8a00 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-news__descr {
+		margin: 15px 0;
+		padding: 0 10px;
+		flex: 1;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	._customer-m-news__btn {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		width: 180px;
+		max-width: 140px;
+		height: 40px;
+		color: #000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #f07c00;
+	}
+
+	._customer-m-news__btn:hover {
+		cursor: pointer;
+		opacity: 0.85;
+	}
+
+	._customer-m-news__control {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
+	._customer-m-news__control .swiper-pagination {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: auto !important;
+		position: relative !important;
+		bottom: auto !important;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		outline: 0 !important;
+	}
+
+	._customer-m-news__control .swiper-pagination-bullet {
+		width: 10px !important;
+		height: 10px !important;
+		border: 1px solid #f07c00 !important;
+		border-radius: 100% !important;
+		outline: 0 !important;
+		opacity: 1 !important;
+		margin: 0 3px !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		background-color: #fff !important;
+		transition: none !important;
+	}
+
+	._customer-m-news__control .swiper-pagination-bullet-active {
+		background-color: #f07c00 !important;
+	}
+
+	._customer-m-news__more-btn {
+		margin: 30px 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		outline: 0;
+		background-color: transparent;
+		border: 2px solid #f07c00;
+		box-sizing: border-box;
+		border-radius: 4px;
+		width: 100%;
+		height: 40px;
+		color: #f07c00 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	._customer-m-news__more-btn:hover {
+		cursor: pointer;
+		background-color: #f07c00;
+		color: #000 !important;
+	}
+
+	._customer-m-about {
+		padding: 50px 0;
+		background: url(/system/ckeditor_assets/pictures/446502/content_about-bg.webp) top center/cover no-repeat;
+	}
+
+	._customer-m-about__wrapper {
+		padding: 50px 30px;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+
+	._customer-m-about__title {
+		color: #000;
+		font-family: Nunito, sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto;
+		max-width: max-content;
+		position: relative;
+	}
+
+	._customer-m-about__title::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #f07c00;
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 0;
+	}
+
+	._customer-m-about__text {
+		margin-top: 35px;
+		color: #000;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.4;
+		text-align: center;
+	}
+
+	@media (max-width: 1023px) {
+		._customer-m-cib__slide {
+			height: 470px !important;
+		}
+
+		._customer-m-cib__slide-content {
+			margin-top: 50px;
+		}
+
+		._customer-m-groups__heading {
+			font-size: 14px;
+		}
+
+		._customer-m-groups__btn {
+			font-size: 14px;
+		}
+
+		._customer-m-groups__more-btn {
+			font-size: 14px;
+		}
+
+		._customer-m-goods__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		._customer-m-goods__heading {
+			font-size: 14px;
+		}
+
+		.company-products-item__price,
+		.company-products-item__price * {
+			font-size: 14px !important;
+		}
+
+		._customer-m-goods__btn {
+			font-size: 14px;
+		}
+
+		._customer-m-goods__more-btn {
+			font-size: 14px;
+		}
+
+		._customer-m-showcase__heading {
+			font-size: 16px;
+		}
+
+		._customer-m-showcase__descr {
+			font-size: 16px;
+		}
+
+		._customer-m-showcase__btn {
+			font-size: 14px;
+		}
+
+		._customer-m-order__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		._customer-m-order__subtitle {
+			font-size: 16px;
+		}
+
+		._customer-m-skills__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		._customer-m-skills__descr {
+			font-size: 16px;
+		}
+
+		._customer-m-news__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		._customer-m-news__btn,
+		._customer-m-news__date,
+		._customer-m-news__descr,
+		._customer-m-news__heading {
+			font-size: 14px;
+		}
+
+		._customer-m-news__more-btn {
+			font-size: 14px;
+		}
+
+		._customer-m-about__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		._customer-m-about__text {
+			font-size: 14px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		._customer-m-cib__slide {
+			height: 400px !important;
+		}
+
+		._customer-m-cib__slide-decor-1 {
+			left: calc(50% - 375px);
+		}
+
+		._customer-m-cib__slide-decor-2 {
+			left: calc(50% - 10px);
+		}
+
+		._customer-m-cib__slide-decor-3 {
+			top: 160px;
+			left: 275px;
+			width: 200px;
+		}
+
+		._customer-m-cib__slide-content {
+			width: 420px;
+			padding: 20px;
+			height: 300px !important;
+		}
+
+		._customer-m-cib__slide-title {
+			font-size: 26px;
+			line-height: 1.2;
+		}
+
+		._customer-m-cib__slide-items {
+			display: block;
+		}
+
+		._customer-m-cib__slide-items span {
+			font-size: 14px;
+			margin-left: 0;
+			margin-top: 10px;
+		}
+
+		._customer-m-cib__slide-items span:nth-of-type(1) {
+			margin-top: 0;
+		}
+
+		._customer-m-cib__slide-btn {
+			width: 140px;
+			font-size: 14px;
+		}
+
+		._customer-m-groups__item {
+			width: 32% !important;
+			margin-right: 2% !important;
+		}
+
+		._customer-m-groups__item:nth-of-type(4n) {
+			margin-right: 2% !important;
+		}
+
+		._customer-m-groups__item:nth-of-type(3n) {
+			margin-right: 0 !important;
+		}
+
+		._customer-m-groups__btn {
+			width: 120px;
+		}
+
+		._customer-m-goods__item {
+			width: 32% !important;
+			margin-right: 2% !important;
+		}
+
+		._customer-m-goods__item:nth-of-type(4n) {
+			margin-right: 2% !important;
+		}
+
+		._customer-m-goods__item:nth-of-type(3n) {
+			margin-right: 0 !important;
+		}
+
+		._customer-m-goods__btn {
+			width: 120px;
+		}
+
+		._customer-m-showcase__btn {
+			width: 140px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		._customer-m-cib__slide {
+			height: 295px !important;
+		}
+
+		._customer-m-cib__slide-decor-2 {
+			left: calc(50% - 50px);
+			top: -95px;
+			width: 400px;
+		}
+
+		._customer-m-cib__slide-decor-3 {
+			left: 215px;
+		}
+
+		._customer-m-cib__slide-content {
+			margin-top: 30px;
+			width: 325px;
+			height: 235px !important;
+		}
+
+		._customer-m-cib__slide-title {
+			font-size: 20px;
+		}
+
+		._customer-m-cib__slide-items {
+			margin-top: 20px;
+		}
+
+		._customer-m-cib__slide-items span {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		._customer-m-cib__slide-btn {
+			width: 120px;
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-groups {
+			padding: 30px 0;
+		}
+
+		._customer-m-groups__items {
+			justify-content: space-between;
+		}
+
+		._customer-m-groups__item {
+			width: 49% !important;
+			margin-right: 0 !important;
+			margin-bottom: 10px !important;
+		}
+
+		._customer-m-groups__item:nth-of-type(3n),
+		._customer-m-groups__item:nth-of-type(4n) {
+			margin-right: 0 !important;
+		}
+
+		._customer-m-groups__heading {
+			font-size: 12px;
+		}
+
+		._customer-m-groups__btn {
+			height: 35px;
+			font-size: 12px;
+		}
+
+		._customer-m-groups__more-btn {
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-goods {
+			padding: 30px 0;
+		}
+
+		._customer-m-goods__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		._customer-m-goods__items {
+			margin-top: 25px;
+			justify-content: space-between;
+		}
+
+		._customer-m-goods__item {
+			width: 49% !important;
+			margin-right: 0 !important;
+			margin-bottom: 10px !important;
+		}
+
+		._customer-m-goods__item:nth-of-type(3n),
+		._customer-m-goods__item:nth-of-type(4n) {
+			margin-right: 0 !important;
+		}
+
+		._customer-m-goods__heading {
+			font-size: 12px;
+		}
+
+		.company-products-item__price,
+		.company-products-item__price * {
+			font-size: 12px !important;
+		}
+
+		._customer-m-goods__btn {
+			height: 35px;
+			font-size: 12px;
+		}
+
+		._customer-m-goods__more-btn {
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-showcase {
+			padding: 30px 0;
+		}
+
+		._customer-m-showcase__slide {
+			padding: 58px 8px 18px 8px !important;
+		}
+
+		._customer-m-showcase__slide::before {
+			left: 0;
+			top: 0;
+			background-size: 30px;
+		}
+
+		._customer-m-showcase__heading {
+			font-size: 12px;
+		}
+
+		._customer-m-showcase__descr {
+			font-size: 12px;
+		}
+
+		._customer-m-showcase__btn {
+			width: 120px;
+			height: 35px;
+			font-size: 12px;
+		}
+
+		._customer-m-order {
+			padding: 30px 0;
+		}
+
+		._customer-m-order__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		._customer-m-order__subtitle {
+			font-size: 12px;
+		}
+
+		._customer-m-order__form {
+			margin-top: 20px;
+		}
+
+		._customer-m-order__inputs label {
+			width: 100%;
+		}
+
+		._customer-m-order__btns-submit {
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-order__btns-file {
+			height: 35px;
+		}
+
+		._customer-m-order__btns-file img {
+			width: 20px;
+		}
+
+		._customer-m-skills {
+			padding: 30px 0;
+		}
+
+		._customer-m-skills__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		._customer-m-skills__slider {
+			margin-top: 25px;
+		}
+
+		._customer-m-skills__icon {
+			height: 45px;
+		}
+
+		._customer-m-skills__descr {
+			margin-top: 10px;
+			font-size: 14px;
+		}
+
+		._customer-m-news {
+			padding: 30px 0;
+		}
+
+		._customer-m-news__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		._customer-m-news__slider {
+			margin-top: 25px;
+		}
+
+		._customer-m-news__img {
+			height: 150px;
+		}
+
+		._customer-m-news__heading {
+			margin-top: 10px;
+			font-size: 12px;
+		}
+
+		._customer-m-news__date {
+			margin-top: 10px;
+			font-size: 12px;
+		}
+
+		._customer-m-news__descr {
+			margin: 10px 0 15px 0;
+			font-size: 12px;
+		}
+
+		._customer-m-news__btn {
+			width: 120px;
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-news__more-btn {
+			margin-top: 20px;
+			font-size: 12px;
+			height: 35px;
+		}
+
+		._customer-m-about {
+			padding: 30px 0;
+		}
+
+		._customer-m-about__wrapper {
+			padding: 30px 15px;
+		}
+
+		._customer-m-about__title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		._customer-m-about__text {
+			margin-top: 25px;
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 370px) {
+		._customer-m-cib__slide-content {
+			width: 280px;
+		}
+
+		._customer-m-cib__slide-title {
+			font-size: 18px;
+		}
+	}
+</style>
+<div class="_customer-m-section _customer-m-cib">
+	<div class="_customer-m-cib__slider">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide _customer-m-cib__slide _customer-m-cib__slide-1">
+					<div class="_customer-m-cib__slide-container">
+						<div class="_customer-m-cib__slide-content">
+							<div class="_customer-m-cib__slide-title">
+								Фото-экскурсия по <br />
+								нашему магазину
+							</div>
+							<a
+								href="https://yandex.ru/maps/org/smartpol/64597995932/?ll=61.417547%2C55.163055&z=17"
+								target="_blank"
+								class="_customer-m-cib__slide-btn"
+								onclick="yaCounter35317360.reachGoal('megasite_mobile_link_yandex_ru'); return true;"
+							>
+								Смотреть
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide _customer-m-cib__slide _customer-m-cib__slide-2">
+					<div class="_customer-m-cib__slide-container">
+						<div class="_customer-m-cib__slide-content">
+							<div class="_customer-m-cib__slide-title">
+								Напольные покрытия <br />
+								высокого качества
+							</div>
+							<div class="_customer-m-cib__slide-items">
+								<span> Ламинат </span>
+								<span> Ламинат SPC </span>
+								<span> Минеральный пол </span>
+							</div>
+							<a
+								href="/catalog"
+								class="_customer-m-cib__slide-btn"
+								onclick="yaCounter35317360.reachGoal('megasite_mobile_link_catalog'); return true;"
+							>
+								В каталог
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide _customer-m-cib__slide _customer-m-cib__slide-3">
+					<div class="_customer-m-cib__slide-container">
+						<img
+							src="/system/ckeditor_assets/pictures/446514/content_slide-img-1.webp"
+							alt=""
+							class="_customer-m-cib__slide-decor-1"
+						/>
+						<img
+							src="/system/ckeditor_assets/pictures/446515/content_slide-img-2.webp"
+							alt=""
+							class="_customer-m-cib__slide-decor-2"
+						/>
+						<div class="_customer-m-cib__slide-content">
+							<div class="_customer-m-cib__slide-title">
+								Постоянные <br />
+								скидки и акции
+							</div>
+							<div class="_customer-m-cib__slide-items">
+								<span>
+									У нас вы всегда найдете нужный товар <br />
+									по привлекательной цене
+								</span>
+							</div>
+							<a
+								href="/catalog"
+								class="_customer-m-cib__slide-btn"
+								onclick="yaCounter35317360.reachGoal('megasite_mobile_link_catalog'); return true;"
+							>
+								В каталог
+							</a>
+							<img
+								src="/system/ckeditor_assets/pictures/446516/content_slide-img-3.webp"
+								alt=""
+								class="_customer-m-cib__slide-decor-3"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide _customer-m-cib__slide _customer-m-cib__slide-4">
+					<div class="_customer-m-cib__slide-container">
+						<div class="_customer-m-cib__slide-content">
+							<div class="_customer-m-cib__slide-title">
+								Доставка продукции <br />
+								напрямую от <br />
+								производителей
+							</div>
+							<a
+								href="/catalog"
+								class="_customer-m-cib__slide-btn"
+								onclick="yaCounter35317360.reachGoal('megasite_mobile_link_catalog'); return true;"
+							>
+								В каталог
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-cib__control">
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-groups">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-groups__items">
+			<!-- JS -->
+		</div>
+
+		<a
+			href="/catalog"
+			class="_customer-m-groups__more-btn"
+			onclick="yaCounter35317360.reachGoal('megasite_mobile_link_catalog'); return true;"
+		>
+			перейти в каталог
+		</a>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-goods">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-goods__title">наши предложения</div>
+
+		<div class="_customer-m-goods__items">
+			<!-- JS -->
+		</div>
+
+		<a
+			href="/catalog"
+			class="_customer-m-goods__more-btn"
+			onclick="yaCounter35317360.reachGoal('megasite_mobile_link_catalog'); return true;"
+		>
+			перейти в каталог
+		</a>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-showcase">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-showcase__slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- JS -->
+				</div>
+			</div>
+		</div>
+
+		<div class="_customer-m-showcase__control">
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-order">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-order__title">Проконсультируем и&nbsp;поможем рассчитать стоимость заказа</div>
+		<div class="_customer-m-order__subtitle">
+			Оставьте свои контактные данные, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+		</div>
+
+		<div class="_customer-m-order__form">
+			<div class="_customer-m-order__inputs">
+				<label>
+					<input
+						class="_customer-m-order__input"
+						id="_customerName"
+						type="text"
+						required=""
+						placeholder="Имя"
+					/>
+				</label>
+				<label>
+					<input
+						class="_customer-m-order__input"
+						id="_customerPhone"
+						type="tel"
+						required=""
+						placeholder="Телефон"
+					/>
+				</label>
+				<label>
+					<input
+						class="_customer-m-order__input"
+						id="_customerEmail"
+						type="email"
+						required=""
+						placeholder="Почта"
+					/>
+				</label>
+			</div>
+
+			<label class="_customer-m-order__textarea-label">
+				<textarea
+					class="_customer-m-order__textarea"
+					id="_customerMessage"
+					placeholder="Комментарий"
+					name="comment"
+				></textarea>
+			</label>
+
+			<div class="_customer-m-order__btns">
+				<button
+					id="_customerSubmit"
+					class="ab-order js-apress-order-button js-get-order-form _customer-m-order__btns-submit"
+					data-company-contacts-url="/contacts"
+					data-company-name="ДАРСТРОЙ"
+					data-params='{"company_id":"9446913"}'
+					data-type="message"
+					onclick="yaCounter35317360.reachGoal('megasite_mobile_write_us'); return true;"
+				>
+					Отправить
+				</button>
+				<button
+					id="_customerFile"
+					class="_customer-m-order__btns-file ab-order js-apress-order-button js-get-order-form"
+					data-company-contacts-url="/contacts"
+					data-company-name="ДАРСТРОЙ"
+					data-params='{"company_id":"9446913"}'
+					data-type="message"
+					onclick="yaCounter35317360.reachGoal('megasite_mobile_write_us'); return true;"
+				>
+					<img src="/system/ckeditor_assets/pictures/446517/content_upload-icon.webp" alt="" />
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-skills">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-skills__title">наши преимущества</div>
+
+		<div class="_customer-m-skills__slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide _customer-m-skills__slide">
+						<img
+							src="/system/ckeditor_assets/pictures/446504/content_s1.webp"
+							alt=""
+							class="_customer-m-skills__icon"
+						/>
+						<div class="_customer-m-skills__descr">Более 10500&nbsp;наименований продукции</div>
+					</div>
+					<div class="swiper-slide _customer-m-skills__slide">
+						<img
+							src="/system/ckeditor_assets/pictures/446505/content_s2.webp"
+							alt=""
+							class="_customer-m-skills__icon"
+						/>
+						<div class="_customer-m-skills__descr">
+							Доставка точно в&nbsp;срок по&nbsp;всей&nbsp;России и&nbsp;Казахстану
+						</div>
+					</div>
+					<div class="swiper-slide _customer-m-skills__slide">
+						<img
+							src="/system/ckeditor_assets/pictures/446506/content_s3.webp"
+							alt=""
+							class="_customer-m-skills__icon"
+						/>
+						<div class="_customer-m-skills__descr">
+							Предоставляем образцы в&nbsp;магазинах и&nbsp;на&nbsp;e&#8209;mail
+						</div>
+					</div>
+					<div class="swiper-slide _customer-m-skills__slide">
+						<img
+							src="/system/ckeditor_assets/pictures/446507/content_s4.webp"
+							alt=""
+							class="_customer-m-skills__icon"
+						/>
+						<div class="_customer-m-skills__descr">Монтаж любого напольного покрытия</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="_customer-m-skills__control">
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-news">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-news__title">Новости</div>
+
+		<div class="_customer-m-news__slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- JS -->
+				</div>
+			</div>
+		</div>
+
+		<div class="_customer-m-news__control">
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<a
+			href="/news"
+			class="_customer-m-news__more-btn"
+			onclick="yaCounter35317360.reachGoal('megasite_mobile_link_news'); return true;"
+		>
+			все новости
+		</a>
+	</div>
+</div>
+<div class="_customer-m-section _customer-m-about">
+	<div class="_customer-m-section__container">
+		<div class="_customer-m-about__wrapper">
+			<div class="_customer-m-about__title">о компании</div>
+			<div class="_customer-m-about__text">
+				<p class="_customer-about__text">
+					Один из крупнейших поставщиков напольных покрытий в&nbsp;Челябинске. Большой выбор ламината,
+					линолеума, паркета, ПВХ&nbsp;плитки и&nbsp;других бытовых, коммерческих и&nbsp;специальных покрытий.
+					Опт&nbsp;и&nbsp;розница, комплексные поставки для&nbsp;юр.&nbsp;лиц. <br />
+					Доставка по России и Казахстану
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script>
+	let sliderMain = new Swiper("._customer-m-cib .swiper-container", {
+		slidesPerView: 1,
+		loop: true,
+		grabCursor: true,
+		pagination: {
+			el: "._customer-m-cib .swiper-pagination",
+			dinamicBullets: true,
+			clickable: true,
+		},
+		autoplay: {
+			delay: 6000,
+		},
+		speed: 900,
+	});
+
+	let sliderSkills = new Swiper("._customer-m-skills .swiper-container", {
+		slidesPerView: 1,
+		grabCursor: true,
+		pagination: {
+			el: "._customer-m-skills .swiper-pagination",
+			dinamicBullets: true,
+			clickable: true,
+		},
+		speed: 900,
+	});
+</script>
+<script src="/assets/custom_assets/imask.js"></script>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		function setImask(id) {
+			let element = document.getElementById(id);
+			let maskOptions = {
+				mask: "+7 (000) 000-00-00",
+				lazy: false,
+			};
+			let mask = new IMask(element, maskOptions);
+		}
+
+		setImask("_customerPhone");
+
+		const _customerInputs = document.querySelectorAll("._customer-m-order__input:required");
+
+		setInterval(function () {
+			_customerInputs.forEach((item) => {
+				if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+					item.style.borderColor = "#ff6e58";
+				}
+
+				if (item.value && item.value !== "+7 (___) ___-__-__") {
+					item.style.borderColor = "#000";
+				}
+			});
+		}, 1000);
+
+		const _customerSubmitButton = document.querySelector("#_customerSubmit"),
+			_customerFileButton = document.querySelector("#_customerFile");
+		_customerSubmitButton.disabled = true;
+		_customerFileButton.disabled = true;
+		let _customerFinalMessage = "";
+		function _customerSendForm() {
+			if (_customerSubmitButton.disabled !== true) {
+				_customerFinalMessage = `Добрый день!\nМеня зовут ${document.querySelector("#_customerName").value}\n${
+					document.querySelector("#_customerMessage").value
+				}`;
+			}
+		}
+		function formValidate() {
+			_customerSubmitButton.disabled =
+				[...document.querySelectorAll("._customer-m-order__input:required")].filter(
+					(element) => element.value === "" || element.value === 0
+				).length !== 0
+					? true
+					: false;
+			_customerFileButton.disabled = _customerSubmitButton.disabled == true ? true : false;
+		}
+		document.querySelectorAll("._customer-m-order__input:required").forEach((element) => {
+			element.addEventListener("change", () => {
+				formValidate();
+			});
+			element.addEventListener("mouseout", () => {
+				formValidate();
+			});
+		});
+		function openWidget() {
+			_customerSendForm();
+			setTimeout(() => {
+				document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+				document.querySelector(".js-order-customer-phone-field") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Телефон: " + document.querySelector("#_customerPhone").value)
+					: (document.querySelector(".js-order-customer-phone-field").value =
+							document.querySelector("#_customerPhone").value);
+				document.querySelector(".js-input-email-auth") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+					: (document.querySelector(".js-input-email-auth").value =
+							document.querySelector("#_customerEmail").value);
+			}, 1000);
+		}
+		_customerSubmitButton.addEventListener("click", function (event) {
+			openWidget();
+		});
+		_customerFileButton.addEventListener("click", function (e) {
+			openWidget();
+			setTimeout(() => {
+				document.getElementById("order_").click();
+			}, 1000);
+		});
+	});
+</script>
+<!-- end Main Page -->
+
+<!-- Groups Block -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const renderedGroupsBLock = document.querySelector("._customer-m-groups");
+		const groupsBlock = document.querySelector(".company-product-groups__wrapper");
+		const groups = document.querySelectorAll(".company-product-group");
+
+		if (renderedGroupsBLock && groupsBlock && groups.length > 0) {
+			const groupsWrapper = document.querySelector("._customer-m-groups__items");
+
+			groups.forEach((item) => {
+				let link = item.getAttribute("href");
+				let heading = item.querySelector(".company-product-group__name").textContent;
+				let img = item.querySelector("img");
+				if (img) {
+					img = img.getAttribute("data-original");
+				} else {
+					img = "/system/ckeditor_assets/pictures/446501/content_g-logo.png";
+				}
+
+				let renderedGroupItem = document.createElement("a");
+				renderedGroupItem.classList.add("_customer-m-groups__item");
+				renderedGroupItem.setAttribute("href", link);
+				renderedGroupItem.innerHTML = `
+					<div class="_customer-m-groups__img"><img src="${img}" alt="" /></div>
+					<div class="_customer-m-groups__heading">${heading}</div>
+					<div class="_customer-m-groups__btn">Смотреть</div>
+				`;
+
+				groupsWrapper.append(renderedGroupItem);
+			});
+
+			renderedGroupsBLock.style.display = "block";
+			groupsBlock.style.display = "none";
+		}
+	});
+</script>
+<!-- end Groups Block -->
+
+<!-- Goods Block -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const goodsBlock = document.querySelector(".company-content-block");
+		const rendereGoodsBlock = document.querySelector("._customer-m-goods");
+		goodsBlock.style.display = "none";
+
+		const goodsItems = document.querySelectorAll(".company-products-item");
+
+		const goodsWrapper = document.querySelector("._customer-m-goods__items");
+
+		goodsItems.forEach((item) => {
+			if (item.firstChild) {
+				let renderedGoodsItem = document.createElement("div");
+
+				let link = item.querySelector("a").getAttribute("href");
+				let img = item.querySelector("img");
+				if (img) {
+					img = img.getAttribute("data-original");
+				} else {
+					img = "/system/ckeditor_assets/pictures/446501/content_g-logo.png";
+				}
+				let heading = item.querySelector(".company-products-item__name").textContent;
+				let price = item.querySelector(".company-products-item__price").cloneNode(true);
+				let cartBtn = item.querySelector(".company-products-item-cart");
+
+				renderedGoodsItem.classList.add("_customer-m-goods__item");
+
+				renderedGoodsItem.insertAdjacentHTML(
+					"afterbegin",
+					`
+						<a href="${link}" class='_customer-m-goods__img'>
+							<img src="${img}">
+						</a>
+						<a href="${link}" class="_customer-m-goods__heading">${heading}</a>
+						<div class="_customer-m-goods__btns">
+							<a href="${link}" class="_customer-m-goods__btn">Заказать</a>
+						</div>
+					`
+				);
+				renderedGoodsItem.append(price);
+
+				if (cartBtn) {
+					cartBtn = cartBtn.cloneNode(true);
+					renderedGoodsItem.querySelector("._customer-m-goods__btns").append(cartBtn);
+				}
+
+				goodsWrapper.append(renderedGoodsItem);
+			}
+		});
+
+		rendereGoodsBlock.style.display = "block";
+	});
+</script>
+<!-- end Goods Block -->
+
+<!-- News block slider -->
+<script>
+	const newsBlock = document.querySelector("._customer-m-news");
+	const newsWrapper = document.querySelector("._customer-m-news__slider .swiper-wrapper");
+
+	let sliderNews = new Swiper("._customer-m-news__slider .swiper-container", {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		grabCursor: true,
+		pagination: {
+			el: "._customer-m-news .swiper-pagination",
+			dinamicBullets: true,
+			clickable: true,
+		},
+		speed: 900,
+		breakpoints: {
+			370: {
+				slidesPerView: 2,
+			},
+		},
+	});
+
+	fetch("/news")
+		.then((response) => response.text())
+		.then((html) => {
+			const parser = new DOMParser();
+			const doc = parser.parseFromString(html, "text/html");
+			const news = doc.querySelector(".company-info-section-items").cloneNode(true);
+			const parsedNewsItems = news.querySelectorAll(".company-info-section-items__item");
+
+			if (parsedNewsItems && parsedNewsItems.length >= 0) {
+				parsedNewsItems.forEach((item, i) => {
+					if (i < 3) {
+						let link, img, ttl, descr, date;
+
+						link = item.querySelector("a").getAttribute("href");
+						img = item.querySelector("img");
+						if (img) {
+							img = img.getAttribute("data-original");
+						} else {
+							img = "/system/ckeditor_assets/pictures/446501/content_g-logo.png";
+						}
+						ttl = item.querySelector(".company-info-section-items__title-link").textContent;
+						descr = item.querySelector(".company-info-section-items__description").textContent;
+						date = item.querySelector(".company-info-section-items__date").textContent;
+
+						let renderedNewsItem = document.createElement("a");
+						renderedNewsItem.setAttribute("href", link);
+						renderedNewsItem.classList.add("swiper-slide");
+						renderedNewsItem.classList.add("_customer-m-news__slide");
+
+						renderedNewsItem.innerHTML = `
+							<div class="_customer-m-news__img">
+								<img src="${img}" alt="" />
+							</div>
+							<div class="_customer-m-news__heading">${ttl}</div>
+							<div class="_customer-m-news__date">${date}</div>
+							<div class="_customer-m-news__descr">${descr}</div>
+							<div class="_customer-m-news__btn">читать</div>
+					`;
+
+						newsWrapper.append(renderedNewsItem);
+					}
+				});
+
+				newsBlock.style.display = "block";
+			}
+
+			sliderNews.update();
+			const swiperWrapperHeightNews = document.querySelector(
+				"._customer-m-news__slider .swiper-wrapper"
+			).scrollHeight;
+			const slidesNews = document.querySelectorAll("._customer-m-news__slide");
+			slidesNews.forEach((slide) => (slide.style.minHeight = swiperWrapperHeightNews + "px"));
+
+			sliderNews.on("slideChange", function () {
+				slidesNews.forEach((slide) => (slide.style.minHeight = swiperWrapperHeightNews + "px"));
+			});
+		})
+		.catch((err) => console.log("Failed to fetch page: ", err));
+</script>
+<!-- end News Block slider -->
+
+<!-- Showcase Block slider -->
+<script>
+	let sliderShowcase = new Swiper("._customer-m-showcase__slider .swiper-container", {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		grabCursor: true,
+		pagination: {
+			el: "._customer-m-showcase .swiper-pagination",
+			dinamicBullets: true,
+			clickable: true,
+		},
+		speed: 900,
+		breakpoints: {
+			370: {
+				slidesPerView: 2,
+			},
+		},
+	});
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const showcases = document.querySelectorAll(".company-showcase__wrapper");
+		const renderedShowcaseBlock = document.querySelector("._customer-m-showcase");
+
+		if (showcases && showcases.length > 0) {
+			const showcaseWrapper = document.querySelector("._customer-m-showcase__slider .swiper-wrapper");
+
+			showcases.forEach((item) => {
+				item.style.display = "none";
+				let renderedShowcasesItem = document.createElement("a");
+
+				let link = item.querySelector("a").getAttribute("href");
+				let heading = item.querySelector("a").textContent;
+				let descr = item.querySelector(".company-showcase__description").textContent;
+
+				let img = item.querySelector(".company-showcase__image");
+
+				if (img) {
+					img = img.getAttribute("data-original");
+				} else {
+					img = "/system/ckeditor_assets/pictures/445751/content_g-logo.png";
+				}
+
+				renderedShowcasesItem.classList.add("swiper-slide");
+				renderedShowcasesItem.classList.add("_customer-m-showcase__slide");
+				renderedShowcasesItem.setAttribute("href", link);
+				renderedShowcasesItem.innerHTML = ` 
+					<div class="_customer-m-showcase__img">
+						<img src="${img}" alt="" />
+					</div>
+					<div class="_customer-m-showcase__heading">${heading}</div>
+					<div class="_customer-m-showcase__descr">${descr}</div>
+					<div class="_customer-m-showcase__btn">Подробнее</div>
+				`;
+
+				showcaseWrapper.append(renderedShowcasesItem);
+			});
+
+			sliderShowcase.update();
+
+			const slides = document.querySelectorAll("._customer-m-showcase__slide");
+			setTimeout(function () {
+				slides.forEach((slide) => {
+					slide.style.minHeight =
+						document.querySelector("._customer-m-showcase .swiper-wrapper").clientHeight + "px";
+				});
+			}, 1000);
+
+			sliderShowcase.on("slideChange", function () {
+				slides.forEach((slide) => {
+					slide.style.minHeight =
+						document.querySelector("._customer-m-showcase .swiper-wrapper").clientHeight + "px";
+				});
+			});
+
+			renderedShowcaseBlock.style.display = "block";
+		}
+	});
+
+	sliderShowcase.update();
+</script>
+<!-- end Showcase Block slider -->

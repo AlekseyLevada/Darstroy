@@ -1,0 +1,528 @@
+<!-- Footer -->
+<style>
+	/* footer */
+	.footer-container {
+		margin-top: 0;
+	}
+
+	.footer-company .fc-text-zone {
+		margin: 0 !important;
+	}
+
+	.footer-company .fc-top {
+		padding: 0 !important;
+	}
+
+	._customer-footer-wrapper {
+		max-width: 100%;
+		width: 100%;
+		background-color: #ffffff;
+	}
+
+	._customer-footer {
+		background-color: #ffffff;
+		max-width: 1220px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		position: relative;
+		box-sizing: border-box;
+		padding: 80px 10px !important;
+	}
+
+	._customer-footer__logo {
+		width: 180px;
+		height: 99px;
+		margin-right: 10px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	._customer-footer__logo img {
+		max-width: 180px;
+		max-height: 99px;
+	}
+
+	._customer-footer ._customer-header__logo-text {
+		margin: 12px 0 0 !important;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px !important;
+		white-space: nowrap;
+	}
+
+	._customer-footer__catalog-list {
+		max-width: 200px;
+	}
+
+	._customer-footer__catalog-list:nth-of-type(3) {
+		max-width: 224px;
+	}
+
+	._customer-footer__cnt-bold {
+		display: inline-block;
+		margin: 0 0 25px 0;
+		color: #000000;
+		font-family: Nunito, sans-serif;
+		font-size: 12px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 18px !important;
+		text-align: left;
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	._customer-footer__cnt-bold:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #f07c00;
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+	}
+
+	._customer-footer__cnt {
+		display: inline-block;
+		margin: 0 0 12px 0 !important;
+		color: #000000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 18px !important;
+		text-align: left;
+		text-decoration: none !important;
+	}
+
+	._customer-footer__ul li:last-of-type ._customer-footer__cnt {
+		margin: 0 !important;
+	}
+
+	._customer-footer__cnt:hover {
+		text-decoration: underline !important;
+		cursor: pointer;
+	}
+
+	._customer-footer__contact-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		max-width: 297px;
+	}
+
+	._customer-footer__ul {
+		list-style: none !important;
+		margin: 0 !important;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+
+	._customer-footer__contact {
+		color: #000000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px !important;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		white-space: nowrap;
+		margin: 0 0 15px 0 !important;
+	}
+
+	._customer-footer__mail:hover,
+	._customer-footer__phone:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	._customer-footer__contact:before {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 18px;
+		background-image: url("/system/ckeditor_assets/pictures/346908/content_address.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 5px;
+		left: 0;
+	}
+
+	._customer-footer__mail:before {
+		top: 2px;
+		width: 18px;
+		height: 18px;
+		background-image: url("/system/ckeditor_assets/pictures/346909/content_mail.png");
+	}
+
+	._customer-footer__phone:before {
+		top: 2px;
+		width: 18px;
+		height: 18px;
+		background-image: url("/system/ckeditor_assets/pictures/346861/content_header-phone.png");
+	}
+
+	._customer-footer ._customer-header__social-wrapper {
+		max-width: 160px;
+		margin: 4px 0 20px 0;
+	}
+
+	._customer-footer ._customer-header__button-block {
+		max-width: 297px;
+		flex-direction: column;
+	}
+
+	._customer-footer ._customer-header__button {
+		font-size: 12px !important;
+		width: 300px;
+		max-width: 300px;
+		margin: 0 0 15px 0 !important;
+	}
+
+	._customer-footer ._customer-header__button:nth-of-type(2) {
+		width: 228px;
+		max-width: 228px;
+	}
+
+	@media (max-width: 1275px) {
+		._customer-footer ._customer-header__button {
+			width: 100% !important;
+		}
+	}
+</style>
+<footer class="_customer-footer-wrapper" itemscope itemtype="http://schema.org/LocalBusiness">
+	<div class="_customer-footer">
+		<div class="_customer-footer__logo">
+			<a class="_customer-footer__logo_link" href="/" title="На главную">
+				<img
+					alt="ДАРСТРОЙ"
+					itemprop="logo"
+					src="/system/ckeditor_assets/pictures/346859/content_header-logo.png"
+				/>
+			</a>
+			<p class="_customer-header__logo-text _customer__text">
+				Напольные покрытия. <br />
+				Спортивные покрытия. <br />
+				Покрытия для террас
+			</p>
+		</div>
+		<div class="_customer-footer__catalog-list">
+			<p class="_customer-footer__cnt-bold">Разделы</p>
+			<ul class="_customer-footer__ul">
+				<li><a class="_customer-footer__cnt" href="/">Главная</a></li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/pages/27615-o-kompanii"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_page_27615'); return true;"
+						>О нас</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog'); return true;"
+						>Каталог</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/pages/30957-laminat-spc"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_page_30957'); return true;"
+						>Ламинат SPC</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/pages/27616-dostavka-i-oplata"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_page_27616'); return true;"
+						>Доставка и оплата</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/reviews"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_reviews'); return true;"
+						>Отзывы</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/news"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_news'); return true;"
+						>Новости</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/pages/4141-nashi-ob-ekty"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_page_4141'); return true;"
+						>Наши объекты</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/articles"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_articles'); return true;"
+						>Статьи</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/videos"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_videos'); return true;"
+						>Видео</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/licenses"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_licenses'); return true;"
+					>
+						Лицензии и сертификаты</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/links"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_links'); return true;"
+					>
+						Наши партнеры</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/contacts"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_contacts'); return true;"
+						>Контакты</a
+					>
+				</li>
+			</ul>
+		</div>
+		<div class="_customer-footer__catalog-list">
+			<p class="_customer-footer__cnt-bold">Каталог</p>
+			<ul class="_customer-footer__ul">
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-3125834-napolnyye_pokrytiya"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_3125834'); return true;"
+					>
+						Напольные покрытия</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4293810-falshpol"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4293810'); return true;"
+					>
+						Фальшпол</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4323096-protivoskolzyashchiye_materialy"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4323096'); return true;"
+					>
+						Противоскользящие и грязезащитные покрытия</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4292761-sportivnyye_pokrytiya"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4292761'); return true;"
+					>
+						Спортивные покрытия</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4293803-nastennyye_pokrytiya"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4293803'); return true;"
+					>
+						Настенные покрытия</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4689742-intererny_dekor"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4689742'); return true;"
+					>
+						Интерьерный декор</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4293730-khimiya_kley_lak_maslo"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4293730'); return true;"
+					>
+						Клей, лак, масло</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4293814-terrasnaya_doska"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4293814'); return true;"
+					>
+						Террасная доска</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4293813-terrasnyye_resheniya"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4293813'); return true;"
+					>
+						Террасные решения</a
+					>
+				</li>
+				<li>
+					<a
+						class="_customer-footer__cnt"
+						href="/catalog/k-4308663-ulichnaya_mebel"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_link_catalog_4308663'); return true;"
+					>
+						Уличная мебель для сада <br />
+						и кафе</a
+					>
+				</li>
+			</ul>
+		</div>
+		<div class="_customer-footer__contact-block">
+			<p class="_customer-footer__cnt-bold">Контакты</p>
+			<div class="_customer-footer__ul">
+				<p
+					class="_customer-footer__contact _customer-footer__address"
+					itemscope
+					itemtype="http://schema.org/PostalAddress"
+					itemprop="address"
+				>
+					<span itemprop="addressLocality">г. Челябинск</span>,
+					<span itemprop="streetAddress">пл. МОПРА 9</span>, <br />
+					Левое крыло, отдельный <br />
+					вход
+				</p>
+				<a
+					class="_customer-footer__contact _customer-footer__mail _customer__text"
+					href="mailto:darstroy74@mail.ru"
+					target="”_blank”"
+					itemprop="email"
+					onclick="yaCounter35317360.reachGoal('megasite_footer_email'); return true;"
+				>
+					darstroy74@mail.ru
+				</a>
+				<a
+					class="_customer-footer__contact _customer-footer__phone _customer__text"
+					href="tel:+73517794523"
+					itemprop="telephone"
+					onclick="yaCounter35317360.reachGoal('megasite_footer_tel'); return true;"
+					>+7 (351) 779-45-23
+				</a>
+				<div class="_customer-header__social-wrapper">
+					<a
+						href="https://vk.com/smartpol"
+						itemprop="socialnetwork"
+						target="”_blank”"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_vk'); return true;"
+					>
+						<img src="/system/ckeditor_assets/pictures/346910/content_vk.png" />
+					</a>
+					<a
+						href="https://www.youtube.com/channel/UCTsk2DW3H7jf4e62WG1hWrw?view_as=subscriber"
+						itemprop="socialnetwork"
+						target="”_blank”"
+						itemprop="socialnetwork"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_youtube'); return true;"
+					>
+						<img src="/system/ckeditor_assets/pictures/346911/content_yt.png" />
+					</a>
+					<a
+						href="https://t.me/smartpol"
+						itemprop="socialnetwork"
+						target="”_blank”"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_telegram'); return true;"
+					>
+						<img src="/system/ckeditor_assets/pictures/346864/content_telegram.png" />
+					</a>
+				</div>
+				<div class="_customer-header__button-block">
+					<div
+						class="_customer-header__button _customer__text apress-button ab-order js-apress-order-button js-get-order-form"
+						data-company-contacts-url="/contacts"
+						data-company-name="ДАРСТРОЙ"
+						data-params='{"company_id":"9446913"}'
+						data-type="message"
+					>
+						Рассчитать стоимость покрытия
+					</div>
+					<div
+						class="_customer-header__button _customer__text apress-button ab-order js-apress-order-button js-orders-callback-link"
+						data-agreements='Нажимая "&lt;span class="translation_missing"
+                                     title="translation missing: mobile.apress.orders.hbs.callback.mobile.button"&gt;Button&lt;/span&gt;",
+                                     вы даете согласие на обработку персональных данных в соответствии с &lt;a
+                                     href="https://www.pulscen.ru/about/privacy" target="_blank"
+                                     class="aui-link"&gt;политикой конфиденциальности&lt;/a&gt; и принимаете условия &lt;a href="
+                                     https://www.pulscen.ru/about/terms" target="_blank" class="aui-link"&gt;
+                                     пользовательского соглашения&lt;/a&gt;.'
+						data-app-order-confirm='&lt;p&gt;&lt;span
+                                     style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном
+                                      приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн
+                                      товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ.&lt;/p&gt;&lt;
+                                      /div&gt; &lt;p&gt;  &lt;/p&gt;'
+						data-button-type="order_callback"
+						data-company="9446913"
+						data-company-id="9446913"
+						data-company-name="ДАРСТРОЙ"
+						data-company-name-rest=""
+						data-company-url="/catalog"
+						data-params='{"company_id":"9446913"}'
+						data-statistics="1"
+						data-type="callback"
+						onclick="yaCounter35317360.reachGoal('megasite_footer_callback'); return true;"
+					>
+						Подобрать тип покрытия
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<meta itemprop="name" content="ДАРСТРОЙ" />
+</footer>
+<!-- end Footer -->

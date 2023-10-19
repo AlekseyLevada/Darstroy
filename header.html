@@ -1,0 +1,581 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Nunito:wght@700;800&family=Roboto&display=swap"
+	rel="stylesheet"
+/>
+
+<style>
+	.main-content-wrapper {
+		overflow: hidden;
+	}
+
+	.sb-body.sb-menu.company-site {
+		overflow: visible;
+	}
+
+	.modern-skin .company-content {
+		max-width: 1250px;
+		margin: 0 auto;
+	}
+
+	#company-content-wrapper {
+		max-width: 100% !important;
+	}
+
+	._customer-header {
+		box-sizing: border-box;
+		padding: 40px 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		max-width: 1220px;
+		width: 100%;
+		background-color: #ffffff;
+		position: relative;
+	}
+
+	._customer__text {
+		color: #000000;
+		font-family: Inter, sans-serif;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal !important;
+		text-align: left;
+		margin: 0 !important;
+	}
+
+	._customer-header__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	._customer-header__logo-link {
+		width: 180px;
+		height: 99px;
+		margin: 0 23px 0 0;
+		text-decoration: none;
+	}
+
+	._customer-header__logo-text {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px !important;
+		white-space: nowrap;
+		margin: 0 18px 0 0 !important;
+	}
+
+	._customer-header__search-form {
+		border: 2px solid #000000;
+		border-radius: 4px;
+		background-color: #ffffff;
+		max-width: 792px;
+		width: 100%;
+		height: 47px;
+		margin: 0;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+	._customer-header__input-wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	._customer-header__inp {
+		background-color: transparent;
+		text-transform: uppercase;
+		color: #8d8d8d !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 20px;
+		text-align: left;
+		padding: 14px 10px;
+		box-sizing: border-box;
+		border: none;
+		width: 100%;
+		height: 43px !important;
+		outline: none;
+	}
+
+	._customer-header__inp::-webkit-input-placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-header__inp::-moz-placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-header__inp:-moz-placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-header__inp:-ms-input-placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-header__inp::placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-header__search-btn {
+		width: 43px !important;
+		height: 43px !important;
+		cursor: pointer;
+		position: absolute;
+		border: none !important;
+		border-radius: 4px;
+		background-color: #ffffff !important;
+		box-sizing: border-box;
+		outline: none !important;
+		opacity: 1 !important;
+		left: auto !important;
+		right: 0 !important;
+		top: 0 !important;
+		padding: 0;
+		margin: 0;
+	}
+
+	._customer-header__search-btn:before {
+		content: url("/system/ckeditor_assets/pictures/346857/content_search.png") !important;
+		position: absolute;
+		top: 12px;
+		right: 12px !important;
+		box-sizing: border-box;
+		padding: 0 !important;
+		width: 22px !important;
+		height: 22px !important;
+	}
+
+	._customer-header__search-btn:hover {
+		cursor: pointer;
+	}
+
+	._customer-header__search-btn:hover:before {
+		content: url("/system/ckeditor_assets/pictures/346858/content_search_hover.png") !important;
+	}
+
+	._customer-header__bottom {
+		position: relative;
+		box-sizing: border-box;
+		padding-top: 20px;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	._customer-header__bottom:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: rgba(141, 141, 141, 0.18);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	._customer-header__phone-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		position: relative;
+		box-sizing: border-box;
+		margin: 0 20px 0 0 !important;
+		padding-left: 24px;
+	}
+
+	._customer-header__phone-block::before {
+		content: "";
+		display: block;
+		width: 18px;
+		height: 18px;
+		background-image: url("/system/ckeditor_assets/pictures/346861/content_header-phone.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+
+	._customer-header__phone {
+		color: #000000 !important;
+		font-family: Inter, sans-serif;
+		font-weight: 500;
+		font-size: 16px !important;
+		line-height: 19px !important;
+		margin: 0 !important;
+		text-decoration: none;
+		position: relative;
+		box-sizing: border-box;
+		white-space: nowrap;
+	}
+
+	._customer-header__phone:not(:last-child) {
+		margin: 0 0 8px 0 !important;
+	}
+
+	._customer-header__phone:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	._customer-header__mail {
+		color: #000000 !important;
+		font-family: Inter, sans-serif;
+		font-weight: 500;
+		font-size: 16px !important;
+		line-height: 19px !important;
+		margin: 0 !important;
+		text-decoration: none;
+		position: relative;
+		box-sizing: border-box;
+		white-space: nowrap;
+		padding-left: 24px;
+		margin: 0 20px 0 0 !important;
+	}
+
+	._customer-header__mail:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	._customer-header__mail::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		background-image: url("/system/ckeditor_assets/pictures/346909/content_mail.png");
+	}
+
+	._customer-header__social-wrapper {
+		max-width: 165px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+		margin-right: 20px;
+	}
+
+	._customer-header__social-wrapper a {
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+	._customer-header__social-wrapper a:nth-of-type(3) {
+		margin-right: 0;
+	}
+
+	._customer-header__button-block {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		flex-grow: 99;
+	}
+
+	._customer-header__button {
+		flex-grow: 99;
+		border-radius: 4px !important;
+		background-color: #ffffff !important;
+		width: auto;
+		height: 47px;
+		max-width: 360px;
+		max-height: 47px;
+		min-width: 200px !important;
+		min-height: 47px !important;
+		color: #000000 !important;
+		font-family: Inter, sans-serif !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 26px !important;
+		text-align: center;
+		text-transform: uppercase !important;
+		position: relative;
+		padding: 5px !important;
+		flex-shrink: 0;
+		box-sizing: border-box !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		border: 3px solid #f07c00;
+		margin: 0 10px 0 0 !important;
+	}
+
+	._customer-header__button:hover {
+		color: #f07c00 !important;
+		border: 3px solid #000000;
+		cursor: pointer;
+	}
+
+	._customer-header__button:nth-of-type(2) {
+		padding: 5px 7px !important;
+		width: auto;
+		max-width: 270px;
+		color: #f07c00 !important;
+		border: 3px solid #000000;
+		margin: 0 !important;
+	}
+
+	._customer-header__button:nth-of-type(2):hover {
+		color: #000000 !important;
+		border: 3px solid #f07c00;
+		cursor: pointer;
+	}
+
+	/* подсказки в поиске */
+	._customer-header__search-form .company-search-hints {
+		top: calc(100% - 45px);
+		min-width: auto;
+		width: calc(100% + 4px) !important;
+		min-height: 170px;
+		margin-left: -2px;
+		border-radius: 4px;
+		border: 2px solid #000000;
+		background-color: #ffffff;
+		padding-top: 45px;
+	}
+
+	._customer-header__search-form .company-search-hints__item {
+		background-color: transparent !important;
+	}
+
+	._customer-header__search-form .company-search-hints__item {
+		height: auto;
+	}
+
+	._customer-header__search-form .company-search-hints__list {
+		padding: 0 5px;
+	}
+
+	._customer-header__search-form .company-search-hints__title {
+		color: #000000 !important;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 20px;
+		text-align: left;
+		white-space: normal;
+		padding: 5px;
+		border-radius: 0;
+		background-color: #ffffff;
+		display: inline-block;
+		text-transform: none;
+	}
+
+	._customer-header__search-form .company-search-hints__title:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__search-form.search-form_opend-hints ._customer-header__inp {
+		z-index: 31;
+	}
+
+	div.horisontal-menu-cover ._customer-header__search-form.search-form_opend-hints ._customer-header__inp {
+		z-index: 31;
+		position: relative;
+	}
+
+	._customer-header__search-form.search-form_opend-hints ._customer-header__search-btn {
+		z-index: 32;
+	}
+
+	.company-medal {
+		right: 0;
+	}
+
+	@media (max-width: 1275px) {
+		._customer-header__button {
+			width: calc(50% - 5px) !important;
+			height: auto !important;
+			max-height: 100% !important;
+			max-width: 100% !important;
+		}
+
+		._customer-header__bottom {
+			justify-content: space-between;
+		}
+
+		._customer-header__button-block {
+			justify-content: space-between;
+			max-width: 100%;
+		}
+	}
+</style>
+<div class="_customer-header">
+	<div class="_customer-header__top">
+		<a class="_customer-header__logo-link" href="/" title="На главную">
+			<img
+				class="_customer-header__logo"
+				alt="ДАРСТРОЙ"
+				src="/system/ckeditor_assets/pictures/346859/content_header-logo.png"
+			/>
+		</a>
+		<p class="_customer-header__logo-text _customer__text">
+			Напольные покрытия. <br />
+			Спортивные покрытия. <br />
+			Покрытия для террас
+		</p>
+		<form
+			class="_customer-header__search-form search-form with-search-icon js-company-search-hints-form"
+			accept-charset="UTF-8"
+			accept-encoding="UTF-8"
+			action="/catalog"
+			method="get"
+			onsubmit="formSubmitter.disableButtons(this, null, null);"
+		>
+			<div style="margin: 0; padding: 0; display: none"><input name="utf8" type="hidden" value="✓" /></div>
+
+			<div class="_customer-header-input-cnt sf-input-wrapper _customer-header__input-wrapper">
+				<input
+					class="sf-input js-reset-field js-company-search-hints-input _customer-header__inp"
+					id="q"
+					maxlenght="255"
+					name="q"
+					placeholder="Найти товар или услугу"
+					type="text"
+				/>
+			</div>
+			<button
+				onclick="yaCounter35317360.reachGoal('megasite_header_search'); return true;"
+				class="_customer-header__search-btn"
+				name="commit"
+				type="submit"
+				value="Поиск"
+			></button>
+		</form>
+	</div>
+	<div class="_customer-header__bottom">
+		<div class="_customer-header__phone-block">
+			<a
+				class="_customer-header__phone _customer__text"
+				href="tel:+73517794523"
+				onclick="yaCounter35317360.reachGoal('megasite_header_tel'); return true;"
+				>+7 (351) 779-45-23
+			</a>
+		</div>
+		<a
+			class="_customer-header__mail _customer__text"
+			href="mailto:darstroy74@mail.ru"
+			target="”_blank”"
+			itemprop="email"
+			onclick="yaCounter35317360.reachGoal('megasite_footer_email'); return true;"
+		>
+			darstroy74@mail.ru
+		</a>
+		<div class="_customer-header__social-wrapper">
+			<a
+				href="viber://chat?number=%2B79191235774"
+				itemprop="socialnetwork"
+				target="”_blank”"
+				onclick="yaCounter35317360.reachGoal('megasite_header_viber'); return true;"
+			>
+				<img src="/system/ckeditor_assets/pictures/346862/content_viber.png" />
+			</a>
+			<a
+				href="https://wa.me/79191231778"
+				itemprop="socialnetwork"
+				target="”_blank”"
+				onclick="yaCounter35317360.reachGoal('megasite_header_whatsapp'); return true;"
+			>
+				<img src="/system/ckeditor_assets/pictures/346863/content_whatsapp.png" />
+			</a>
+			<a
+				href="https://t.me/smartpol"
+				itemprop="socialnetwork"
+				target="”_blank”"
+				onclick="yaCounter35317360.reachGoal('megasite_header_telegram'); return true;"
+			>
+				<img src="/system/ckeditor_assets/pictures/346864/content_telegram.png" />
+			</a>
+		</div>
+		<div class="_customer-header__button-block">
+			<div
+				class="_customer-header__button _customer__text apress-button ab-order js-apress-order-button js-get-order-form"
+				data-company-contacts-url="/contacts"
+				data-company-name="ДАРСТРОЙ"
+				data-params='{"company_id":"9446913"}'
+				data-type="message"
+			>
+				Рассчитать стоимость покрытия
+			</div>
+			<div
+				class="_customer-header__button _customer__text apress-button ab-order js-apress-order-button js-orders-callback-link"
+				data-agreements='Нажимая "&lt;span class="translation_missing"
+                title="translation missing: mobile.apress.orders.hbs.callback.mobile.button"&gt;Button&lt;/span&gt;",
+                вы даете согласие на обработку персональных данных в соответствии с &lt;a
+                href="https://www.pulscen.ru/about/privacy" target="_blank"
+                class="aui-link"&gt;политикой конфиденциальности&lt;/a&gt; и принимаете условия &lt;a href="
+                https://www.pulscen.ru/about/terms" target="_blank" class="aui-link"&gt;
+                пользовательского соглашения&lt;/a&gt;.'
+				data-app-order-confirm='&lt;p&gt;&lt;span
+                style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном
+                приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн
+                товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ.&lt;/p&gt;&lt;
+                /div&gt; &lt;p&gt;  &lt;/p&gt;'
+				data-button-type="order_callback"
+				data-company="9446913"
+				data-company-id="9446913"
+				data-company-name="ДАРСТРОЙ"
+				data-company-name-rest=""
+				data-company-url="/catalog"
+				data-params='{"company_id":"9446913"}'
+				data-statistics="1"
+				data-type="callback"
+				onclick="yaCounter35317360.reachGoal('megasite_header_callback'); return true;"
+			>
+				Подобрать тип покрытия
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- catalog DropMenu -->
+<style>
+	.company-horizontal-rubricator__wrapper {
+		max-width: 1200px;
+		left: 10px !important;
+	}
+
+	.company-horizontal-rubricator__item {
+		width: 31%;
+	}
+</style>
+<!-- end catalog DropMenu -->

@@ -1,0 +1,2381 @@
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Nunito:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<link href="/assets/custom_assets/megasite_slider.min.css" rel="stylesheet" />
+<style type="text/css">
+    /* Start reset */
+
+    ._customer-hash {
+        overflow: hidden;
+    }
+
+    .company-content ._customer-props ._customer-grid__item-logo img {
+        max-width: initial;
+    }
+
+    .company-page-content .cpc-text-wrapper ._customer-props ._customer-grid__item-logo img {
+        max-width: initial;
+    }
+
+    .modern-skin .company-content {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .company-page-content .cpc-text-wrapper iframe {
+        max-width: initial;
+        max-height: initial;
+    }
+
+    .tmpl-company-content {
+        background-color: transparent;
+    }
+
+    .company-content {
+        padding: 0px;
+        line-height: inherit;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+
+    .modern-skin .company-header:not(.company-about__header):not(.company-header__products) {
+        margin: 0 !important;
+    }
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    ._customer-visually-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    .company-header__content {
+        display: block;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .cpc-header {
+        display: none;
+    }
+
+    .cp-text-wrapper {
+        margin: 0;
+    }
+
+    ._customer-hash span {
+        display: block;
+    }
+
+    ._customer-hash ul,
+    ._customer-hash ol,
+    ._customer-hash li {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer-hash * {
+        font-family: 'Roboto', sans-serif;
+        color: #221f1f;
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* End reset */
+
+    /* Main Styles*/
+
+    ._customer-laminate {
+        background: #fff;
+    }
+
+    ._customer-intro__container {
+        margin: 0 auto;
+        max-width: 1020px;
+        padding: 69px 10px;
+    }
+
+    ._customer-intro__title {
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    ._customer-intro__title:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 312px;
+        width: 375px;
+        height: 4px;
+        background: #F07C00;
+    }
+
+    ._customer-intro__title h2 {
+        font: 700 48px/58px "Nunito", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    ._customer-intro__text span {
+        font: 400 24px/34px "Roboto", sans-serif;
+        text-align: center;
+    }
+
+    ._customer-brands {
+        margin-bottom: 61px;
+    }
+
+    ._customer-brands__container {
+        margin: 0 auto;
+        max-width: 1226px;
+        padding: 0 10px;
+    }
+
+    ._customer-brands__title {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    ._customer-brands__title:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 185px;
+        width: 837px;
+        height: 4px;
+        background: #F07C00;
+    }
+
+    ._customer-brands__title h2 {
+        font: 700 24px/28px "Nunito", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    ._customer-brands__template {
+        background: #fff;
+        -webkit-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.1019607843);
+        box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.1019607843);
+        border-radius: 24px;
+    }
+
+    ._customer-brands__template-container {
+        padding: 40px;
+    }
+
+    ._customer-template__row--1 {
+        margin-bottom: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 16px;
+    }
+
+    ._customer-template__row--2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    ._customer-brands__template-item-link {
+        text-decoration: none !important;
+        color: #221f1f !important;
+        text-underline-offset: 4px;
+    }
+
+    ._customer-brands__template-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 8px;
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+    }
+
+    ._customer-brands__template-item:hover {
+        text-decoration: underline;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+    }
+
+    ._customer-brands__template-item-title h2 {
+        font: 400 16px/24px "Roboto", sans-serif;
+        color: #727272;
+        text-align: center;
+    }
+
+    ._customer-layer {
+        margin-bottom: 60px;
+    }
+
+    ._customer-layer__container {
+        margin: 0 auto;
+        max-width: 1226px;
+        padding: 0 10px;
+    }
+
+    ._customer-layer__title {
+        margin-bottom: 20px;
+    }
+
+    ._customer-layer__title h2 {
+        font: 700 18px/22px "Nunito", sans-serif;
+        text-transform: uppercase;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    ._customer-layer__grid ._customer-grid__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-color {
+        background: #F07C00;
+        height: 24px;
+        width: 100%;
+        max-width: 153px;
+        margin-right: 24px;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-color--light-brown {
+        background: #FFEFDD;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-title {
+        margin-right: 10px;
+        width: 100%;
+        margin-right: 10px;
+        max-width: 155px;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-title h2 {
+        font: 700 18px/22px "Nunito", sans-serif;
+        text-transform: uppercase;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    ._customer-layer__grid ._customer-grid__item-info span {
+        font: 400 16px/24px "Roboto", sans-serif;
+    }
+
+    ._customer-layer__grid ._customer-grid__item--3 {
+        margin-bottom: 20px;
+    }
+
+    ._customer-layer__grid ._customer-general-text:nth-of-type(4) {
+        margin-bottom: 8px;
+    }
+
+    ._customer-layer__grid ._customer-general-text:nth-of-type(5) {
+        margin-bottom: 0 !important;
+    }
+
+    ._customer-general-text span {
+        font: 400 16px/24px "Roboto", sans-serif;
+    }
+
+    ._customer-props {
+        margin-bottom: 80px;
+    }
+
+    ._customer-props ._customer-general-text span {
+        margin-bottom: 8px;
+    }
+
+    ._customer-props ._customer-general-text span:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    ._customer-props__container {
+        margin: 0 auto;
+        max-width: 1226px;
+        padding: 0 10px;
+    }
+
+    ._customer-props__title {
+        margin-bottom: 20px;
+    }
+
+    ._customer-props__title h2 {
+        font: 700 18px/22px "Nunito", sans-serif;
+        text-transform: uppercase;
+    }
+
+    ._customer-props__grid {
+        margin-bottom: 17px;
+    }
+
+    ._customer-props__grid ._customer-grid__container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 187px 80px 417px 80px 164px 80px 198px;
+        grid-template-columns: 187px 417px 164px 198px;
+        gap: 80px;
+    }
+
+    ._customer-props__grid ._customer-grid__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 16px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-props__grid ._customer-grid__item-text span {
+        font: 400 16px/24px "Roboto", sans-serif;
+    }
+
+    ._customer-props-swiper {
+        display: none !important;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ._customer-props-swiper ._customer-grid__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ._customer-props-swiper ._customer-grid__item-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-props-swiper ._customer-grid__item-text span {
+        text-align: center;
+    }
+
+    .swiper-wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-props-swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-props-swiper__pagination {
+        display: none;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #F07C00;
+        background: #fff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        background: #F07C00;
+    }
+
+    ._customer-offer {
+        background: #FFEFDD;
+    }
+
+    ._customer-offer__container {
+        margin: 0 auto;
+        max-width: 1226px;
+        padding: 90px 10px 80px;
+    }
+
+    ._customer-offer__title {
+        margin-bottom: 42px;
+        position: relative;
+    }
+
+    ._customer-offer__title:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 430px;
+        width: 345px;
+        height: 4px;
+        background: #F07C00;
+    }
+
+    ._customer-offer__title h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font: 700 36px/44px "Nunito", sans-serif;
+    }
+
+    ._customer-offer__grid {
+        margin-bottom: 40px;
+    }
+
+    ._customer-offer__grid ._customer-grid__container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+    }
+
+    ._customer-offer__grid ._customer-grid__item {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    ._customer-offer__grid ._customer-grid__item:hover {
+        -webkit-box-shadow: 0 8px 24px rgba(240, 124, 0, 0.24);
+        box-shadow: 0 8px 24px rgba(240, 124, 0, 0.24);
+    }
+
+    ._customer-offer__grid ._customer-grid__item-container {
+        padding: 10px;
+    }
+
+    ._customer-offer__grid ._customer-grid__item-logo {
+        margin-bottom: 12px;
+    }
+
+    ._customer-offer__grid ._customer-grid__item-title {
+        margin-bottom: 10px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    ._customer-offer__grid ._customer-grid__item-title h2 {
+        font: 700 16px/26px "Roboto", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    ._customer-offer__grid ._customer-grid__item-price {
+        margin-bottom: 60px;
+    }
+
+    ._customer-offer__grid ._customer-grid__item-price span {
+        font: 700 16px/24px "Roboto", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: #F07C00;
+    }
+
+    ._customer-grid__item-btn-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 10px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ._customer-grid__item-btn {
+        cursor: pointer !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 154px !important;
+        min-width: 154px !important;
+        height: 50px !important;
+        border-radius: 6px !important;
+        border: 3px solid #F07C00 !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        background: #fff !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        padding: 10px !important;
+        text-transform: uppercase !important;
+        font: 700 16px/24px "Inter", sans-serif !important;
+        text-align: center !important;
+        -webkit-transition: 0.2s ease-in-out !important;
+        -o-transition: 0.2s ease-in-out !important;
+        transition: 0.2s ease-in-out !important;
+    }
+
+    ._customer-grid__item-btn:hover {
+        -webkit-transition: 0.2s ease-in-out !important;
+        -o-transition: 0.2s ease-in-out !important;
+        transition: 0.2s ease-in-out !important;
+        background: #F07C00 !important;
+    }
+
+    ._customer-grid__item-btn-cart {
+        cursor: pointer !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 50px !important;
+        min-width: 50px !important;
+        height: 50px !important;
+        border-radius: 6px !important;
+        background: #fff !important;
+        border: 3px solid #F07C00 !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        padding: 10px !important;
+        -webkit-transition: 0.2s ease-in-out !important;
+        -o-transition: 0.2s ease-in-out !important;
+        transition: 0.2s ease-in-out !important;
+    }
+
+    ._customer-grid__item-btn-cart:hover {
+        -webkit-transition: 0.2s ease-in-out !important;
+        -o-transition: 0.2s ease-in-out !important;
+        transition: 0.2s ease-in-out !important;
+        background: #F07C00 !important;
+    }
+
+    ._customer-more-btn {
+        border-bottom: 4px solid #F07C00;
+        font: 700 18px/22px "Nunito", sans-serif;
+        text-transform: uppercase;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 165px;
+        padding-bottom: 5px;
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+    }
+
+    ._customer-more-btn:hover {
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    ._customer-more-btn-link {
+        text-decoration: none;
+        color: #221f1f !important;
+        width: 100%;
+        max-width: 165px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    ._customer-feedback {
+        background: #fff;
+    }
+
+    ._customer-feedback__container {
+        max-width: 1220px;
+        padding: 80px 10px 60px;
+        margin: 0 auto;
+    }
+
+    ._customer-feedback__form {
+        background: url(/system/ckeditor_assets/pictures/386001/content_content_form-bg.png) no-repeat center/cover;
+        border-radius: 32px;
+    }
+
+    ._customer-feedback__form-container {
+        padding: 60px 60px 70px;
+    }
+
+    ._customer-feedback__form-wrapper {
+        margin-bottom: 24px;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 30px 1.45fr;
+        grid-template-columns: 1fr 1.45fr;
+        gap: 30px;
+    }
+
+    ._customer-feedback__form-title {
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+    ._customer-feedback__form-title:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 417px;
+        height: 3px;
+        background: #F07C00;
+    }
+
+    ._customer-feedback__form-title h2 {
+        font: 700 33px/43px "Nunito", sans-serif;
+        text-transform: uppercase;
+    }
+
+    ._customer-feedback__form-subitle h2 {
+        font: 500 20px/24px "Inter", sans-serif;
+    }
+
+    ._customer-form__inputs {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 25px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    ._customer-form__input {
+        outline: none;
+        padding: 16px;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__textarea {
+        border: 2px solid #000;
+        outline: none;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-moz-placeholder,
+    ._customer-form__textarea::-moz-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-webkit-input-placeholder,
+    ._customer-form__textarea::-webkit-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input:-ms-input-placeholder,
+    ._customer-form__textarea:-ms-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-ms-input-placeholder,
+    ._customer-form__textarea::-ms-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-webkit-input-placeholder,
+    ._customer-form__textarea::-webkit-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-moz-placeholder,
+    ._customer-form__textarea::-moz-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input:-ms-input-placeholder,
+    ._customer-form__textarea:-ms-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::-ms-input-placeholder,
+    ._customer-form__textarea::-ms-input-placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__input::placeholder,
+    ._customer-form__textarea::placeholder {
+        font: 400 16px/26px "Inter", sans-serif;
+        color: #8d8d8d;
+        text-transform: uppercase;
+    }
+
+    ._customer-form__buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 23px;
+    }
+
+    ._customer-form__btn {
+        cursor: pointer;
+    }
+
+    ._customer-form__btn:hover {
+        background: #fff;
+        outline: 4px solid #F07C00;
+    }
+
+    ._customer-form__btn--submit {
+        border: none;
+        outline: none;
+        background: #f0f0f0;
+        font: 700 20px/24px "Inter", sans-serif;
+        color: #333;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 10px;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 329px;
+        height: 59px;
+    }
+
+    ._customer-form__btn--file {
+        border: none;
+        outline: none;
+        background: #f0f0f0;
+        font: 700 20px/24px "Inter", sans-serif;
+        color: #333;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 10px;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 329px;
+        height: 59px;
+    }
+
+    ._customer-form__terms span {
+        font: 400 14px/20px "Inter", sans-serif;
+    }
+
+    ._customer-form__terms--link {
+        text-decoration: none;
+        text-underline-offset: 4px;
+        color: #221f1f !important;
+    }
+
+    ._customer-form__terms--link:hover {
+        text-decoration: underline;
+    }
+
+    ._customer-form__buttons button:disabled {
+        opacity: 0.7;
+    }
+
+    ._customer-form__btn--file:disabled:hover,
+    ._customer-form__btn--submit:disabled:hover {
+        cursor: not-allowed !important;
+    }
+
+    @media(max-width:1250px) {
+        ._customer-brands__title:before {
+            left: 80px;
+            width: 815px;
+        }
+
+        ._customer-layer__grid ._customer-grid__item-container {
+            -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+        }
+
+        ._customer-props__grid ._customer-grid__container {
+            gap: 10px;
+        }
+
+        ._customer-offer__title:before {
+            left: 320px;
+        }
+
+        ._customer-grid__item-btn {
+            min-width: 115px !important;
+        }
+
+        ._customer-grid__item-btn-wrapper {
+            gap: 5px;
+        }
+
+        ._customer-feedback__form-title h2 {
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        ._customer-feedback__form-title:before {
+            width: 315px;
+        }
+
+        ._customer-feedback__form-wrapper {
+            gap: 10px;
+        }
+
+        ._customer-form__inputs,
+        ._customer-form__buttons {
+            gap: 10px;
+        }
+
+        ._customer-feedback__form-subitle h2 {
+            font-size: 18px;
+        }
+    }
+
+    @media(max-width:978px) {
+
+        ._customer-intro__title:before,
+        ._customer-brands__title:before,
+        ._customer-offer__title:before,
+        ._customer-feedback__form-title:before {
+            display: none;
+        }
+
+        ._customer-intro__container,
+        ._customer-offer__container,
+        ._customer-feedback__container {
+            padding: 20px 10px;
+        }
+
+        ._customer-feedback__form-container {
+            padding: 20px;
+        }
+
+        ._customer-intro__title,
+        ._customer-brands__title,
+        ._customer-layer__title,
+        ._customer-layer__grid ._customer-grid__item--3,
+        ._customer-props,
+        ._customer-offer__title,
+        ._customer-layer,
+        ._customer-feedback__form-title,
+        ._customer-form__inputs,
+        ._customer-form__buttons,
+        ._customer-offer__grid,
+        ._customer-offer__grid ._customer-grid__item-price {
+            margin-bottom: 15px;
+        }
+
+        ._customer-brands__template-item {
+            gap: 5px;
+        }
+
+        ._customer-intro__text span,
+        ._customer-props-swiper ._customer-grid__item-text span,
+        ._customer-feedback__form-subitle h2,
+        ._customer-more-btn {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        ._customer-intro__title h2,
+        ._customer-offer__title h2 {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        ._customer-brands__template-container {
+            padding: 20px;
+        }
+
+        ._customer-template__row--1,
+        ._customer-template__row--2 {
+            margin-bottom: 10px;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        ._customer-brands {
+            margin-bottom: 25px;
+        }
+
+        ._customer-layer__grid ._customer-grid__item-container {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer-props__grid {
+            display: none;
+        }
+
+        ._customer-props-swiper {
+            display: block !important;
+        }
+
+        ._customer-props-swiper__pagination {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        ._customer-props-swiper ._customer-grid__item-text span {
+            font: 400 16px/24px 'Roboto', sans-serif;
+        }
+
+        ._customer-offer__grid ._customer-grid__container {
+            -ms-grid-columns: (1fr)[3];
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        ._customer-offer__grid ._customer-grid__item-logo {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer-grid__item-btn {
+            max-width: 100% !important;
+        }
+
+        ._customer-feedback__form-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer-feedback__form-title h2 {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        ._customer-feedback__form-subitle h2 {
+            display: inline;
+        }
+
+        ._customer-form__inputs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer-form__input,
+        ._customer-form__textarea {
+            max-width: 100%;
+        }
+
+        ._customer-form__terms span {
+            text-align: center;
+        }
+
+        ._customer-feedback__form-subitle {
+            text-align: center;
+        }
+
+        ._customer-form__input {
+            height: 40px;
+        }
+
+        ._customer-form__btn--submit,
+        ._customer-form__btn--file {
+            height: 45px !important;
+        }
+
+        ._customer-feedback__form-wrapper {
+            margin-bottom: 0;
+        }
+
+        ._customer-form__btn--submit {
+            font-size: 16px !important;
+        }
+    }
+
+    @media(max-width:767px) {
+
+        ._customer-template__row--1,
+        ._customer-template__row--2 {
+            -ms-grid-columns: (1fr)[3];
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        ._customer-offer__grid ._customer-grid__container {
+            -ms-grid-columns: (1fr)[2];
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    @media(max-width:600px) {
+
+        ._customer-template__row--1,
+        ._customer-template__row--2 {
+            -ms-grid-columns: (1fr)[2];
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ._customer-layer__grid ._customer-grid__item-container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ._customer-layer__grid ._customer-grid__item-color,
+        ._customer-layer__grid ._customer-grid__item-title {
+            margin-right: 0;
+        }
+
+        ._customer-layer__grid ._customer-grid__item-color {
+            max-width: 90%;
+        }
+
+        ._customer-layer__grid ._customer-grid__item-title h2,
+        ._customer-layer__grid ._customer-grid__item-info span {
+            text-align: center;
+        }
+    }
+
+    @media(max-width:480px) {
+
+        ._customer-intro__text span,
+        ._customer-props-swiper ._customer-grid__item-text span,
+        ._customer-feedback__form-subitle h2,
+        ._customer-more-btn,
+        ._customer-brands__template-item-title h2,
+        ._customer-layer__grid ._customer-grid__item-info span,
+        ._customer-general-text span,
+        ._customer-props-swiper ._customer-grid__item-text span,
+        ._customer-offer__grid ._customer-grid__item-title h2,
+        ._customer-offer__grid ._customer-grid__item-price span,
+        ._customer-grid__item-btn,
+        ._customer-more-btn,
+        ._customer-form__btn--submit {
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+
+        ._customer-layer__title h2,
+        ._customer-layer__grid ._customer-grid__item-title h2,
+        ._customer-props__title h2 {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        ._customer-grid__item-btn,
+        ._customer-grid__item-btn-cart {
+            height: 40px !important;
+        }
+
+        ._customer-grid__item-btn-cart {
+            min-width: 40px !important;
+            max-width: 40px !important;
+        }
+
+        ._customer-feedback__form-title h2 {
+            font-size: 22px;
+        }
+    }
+
+    @media(max-width:400px) {
+        ._customer-grid__item-btn-wrapper {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer-grid__item-btn-cart {
+            max-width: 100% !important;
+        }
+
+        ._customer-form__buttons {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width:360px) {
+
+        ._customer-intro__container,
+        ._customer-offer__container,
+        ._customer-feedback__container {
+            padding: 10px;
+        }
+
+        ._customer-brands__title h2 {
+            font-size: 22px;
+        }
+    }
+
+    @media(max-width:320px) {
+        ._customer-brands__title h2 {
+            font-size: 20px;
+        }
+
+        ._customer-offer__grid ._customer-grid__container {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<div class="_customer-hash">
+    <div class="_customer-hash__container">
+        <div class="_customer-laminate">
+            <div class="_customer-laminate__container">
+                <section class="_customer-intro">
+                    <div class="_customer-intro__container">
+                        <div class="_customer-intro__title">
+                            <h2>
+                                Ламинат SPC
+                            </h2>
+                        </div>
+                        <div class="_customer-intro__text">
+                            <span>
+                                Ламинат SPC (каменный)&nbsp;– новый вид&nbsp;напольного покрытия, который сочетает
+                                в&nbsp;себе преимущества ламината и&nbsp;кварцвиниловой плитки. Компания
+                                ООО&nbsp;«ДАРСТРОЙ» предлагает широкий ассортимент материалов этой категории разных
+                                цветов, фактур и&nbsp;размеров.
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-brands">
+                    <div class="_customer-brands__container">
+                        <div class="_customer-brands__title">
+                            <h2>
+                                Бренды, представленные в&nbsp;ассортименте ООО&nbsp;«ДАРСТРОЙ»:
+                            </h2>
+                        </div>
+                        <div class="_customer-brands__template">
+                            <div class="_customer-brands__template-container">
+                                <div class="_customer-template__row _customer-template__row--1">
+                                    <a href="/catalog/k-9978344-laminat_spc_alpine_floor"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_9978344'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--1">
+                                            <img src="/system/ckeditor_assets/pictures/466340/content_alpin-floor_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Alpine Floor
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-9980619-laminat_spc_stone_floor"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_9980619'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--2">
+                                            <img src="/system/ckeditor_assets/pictures/466341/content_stone-flore_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Stone Floor
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10115990-laminat_spc_skalla"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10115990'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--3">
+                                            <img src="/system/ckeditor_assets/pictures/466342/content_skalla_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    SKALLA
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10129023-laminat_spc_profield"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10129023'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--4">
+                                            <img src="/system/ckeditor_assets/pictures/466343/content_profield_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Profield
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10384680-zeta"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10384680'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--5">
+                                            <img src="/system/ckeditor_assets/pictures/466344/content_zeta_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Zeta
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10692852-floorfactor"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10692852'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--6">
+                                            <img src="/system/ckeditor_assets/pictures/466345/content_floor_factor_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    FloorFactor
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10711686-cronafloor"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10711686'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--7">
+                                            <img src="/system/ckeditor_assets/pictures/466346/content_crona_floore_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    CronaFloor
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10711698-boho_aqua"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10711698'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--8">
+                                            <img src="/system/ckeditor_assets/pictures/466347/content_boho_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    BOHOFLOOR
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="_customer-template__row _customer-template__row--2">
+                                    <a href="/catalog/k-10712609-respect_floor"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10712609'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div class="_customer-brands__template-item _customer-brands__template-item--9">
+                                            <img src="/system/ckeditor_assets/pictures/466348/content_respect_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Respect Floor
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-10720240-wonderful"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_10720240'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--10">
+                                            <img src="/system/ckeditor_assets/pictures/466349/content_wonderful_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Wonderful
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-11465236-vinilam"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_11465236'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--11">
+                                            <img src="/system/ckeditor_assets/pictures/466350/content_vinilam_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Vinilam
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-11470100-vinilpol"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_11470100'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--12">
+                                            <img src="/system/ckeditor_assets/pictures/466351/content_vinilpol_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Vinilpol
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-11488434-kronostep"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_11488434'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--13">
+                                            <img src="/system/ckeditor_assets/pictures/466352/content_kronospan_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Kronostep
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-11488480-millennium"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_11488480'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--14">
+                                            <img src="/system/ckeditor_assets/pictures/466353/content_millemium_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Millennium
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog/k-11488481-woodrock"
+                                        onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_11488481'); return true;"
+                                        target="_blank" class="_customer-brands__template-item-link">
+                                        <div
+                                            class="_customer-brands__template-item _customer-brands__template-item--15">
+                                            <img src="/system/ckeditor_assets/pictures/466354/content_woodrock_logo.png"
+                                                alt="" loading="lazy">
+                                            <div class="_customer-brands__template-item-title">
+                                                <h2>
+                                                    Woodrock
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-layer">
+                    <div class="_customer-layer__container">
+                        <div class="_customer-layer__title">
+                            <h2>
+                                Ламинат SPC состоит из&nbsp;нескольких слоёв:
+                            </h2>
+                        </div>
+                        <div class="_customer-layer__grid _customer-grid">
+                            <div class="_customer-grid__container">
+                                <div class="_customer-grid__item _customer-grid__item--1">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-color"></div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                защитный
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-info _customer-general-text">
+                                            <span>
+                                                —&nbsp;из&nbsp;полиуретана толщиной до&nbsp;0,55&nbsp;мм.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--2">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-color _customer-grid__item-color--light-brown">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                декоративный
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-info _customer-general-text">
+                                            <span>
+                                                —&nbsp;с&nbsp;рисунком под&nbsp;древесину или&nbsp;камень;
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--3">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-color"></div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                основа
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-info _customer-general-text">
+                                            <span>
+                                                —&nbsp;композит из&nbsp;винилхлорида с&nbsp;упрочняющими
+                                                карбонатно-кальциевыми составляющими;
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-general-text">
+                                    <span>
+                                        Отдельные бренды выпускают плиты с&nbsp;дополнительной подложкой, улучшающей
+                                        изоляционные характеристики материала. Она&nbsp;обладает определёнными
+                                        демпфирующими свойствами.
+                                    </span>
+                                </div>
+                                <div class="_customer-general-text">
+                                    <span>
+                                        Ламинат SPC не&nbsp;выгорает на&nbsp;солнце, не&nbsp;поддерживает горение
+                                        и&nbsp;не&nbsp;выделяет вредных веществ.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-props">
+                    <div class="_customer-props__container">
+                        <div class="_customer-props__title">
+                            <h2>
+                                Другие особенности ламината&nbsp;SPC
+                            </h2>
+                        </div>
+                        <div class="_customer-props__grid _customer-grid">
+                            <div class="_customer-grid__container">
+                                <div class="_customer-grid__item _customer-grid__item--1">
+                                    <div class="_customer-grid__item-logo">
+                                        <img src="/system/ckeditor_assets/pictures/466355/content_pecul_logo-1.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <div class="_customer-grid__item-text">
+                                        <span>
+                                            Высокая
+                                        </span>
+                                        <span>
+                                            плотность
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--2">
+                                    <div class="_customer-grid__item-logo">
+                                        <img src="/system/ckeditor_assets/pictures/466356/content_pecul_logo-2.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <div class="_customer-grid__item-text">
+                                        <span>
+                                            Устойчивость к&nbsp;влаге, температурным перепадам и&nbsp;механическим
+                                            повреждениям
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--3">
+                                    <div class="_customer-grid__item-logo">
+                                        <img src="/system/ckeditor_assets/pictures/466357/content_pecul_logo-3.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <div class="_customer-grid__item-text">
+                                        <span>
+                                            Простая
+                                        </span>
+                                        <span>
+                                            укладка
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--4">
+                                    <div class="_customer-grid__item-logo">
+                                        <img src="/system/ckeditor_assets/pictures/466358/content_pecul_logo-4.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <div class="_customer-grid__item-text">
+                                        <span>
+                                            Длительный срок&nbsp;службы
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-props-swiper swiper">
+                            <div class="_customer-props-swiper-container swiper-wrapper">
+                                <div class="_customer-props-swiper-slide swiper-slide">
+                                    <div class="_customer-grid__item _customer-grid__item--1">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466355/content_pecul_logo-1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Высокая плотность
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-props-swiper-slide swiper-slide">
+                                    <div class="_customer-grid__item _customer-grid__item--2">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466356/content_pecul_logo-2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Устойчивость к&nbsp;влаге, температурным перепадам
+                                                и&nbsp;механическим
+                                                повреждениям
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-props-swiper-slide swiper-slide">
+                                    <div class="_customer-grid__item _customer-grid__item--3">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466357/content_pecul_logo-3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Простая укладка
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-props-swiper-slide swiper-slide">
+                                    <div class="_customer-grid__item _customer-grid__item--4">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466358/content_pecul_logo-4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-text">
+                                            <span>
+                                                Длительный срок&nbsp;службы
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer-props-swiper__pagination"></div>
+                        <div class="_customer-general-text">
+                            <span>
+                                Приятный на&nbsp;ощупь ламинат SPC имеет эстетичный&nbsp;вид. Благодаря фотопечати
+                                высокого
+                                разрешения и&nbsp;фактурной поверхности достоверно имитирует натуральные материалы.
+                                Он&nbsp;изготавливается под&nbsp;разные виды дерева (дуб, бук, ясень, вишня)
+                                или&nbsp;камня
+                                (мрамор, гранит, сланец). Даже&nbsp;при&nbsp;близком изучении трудно найти отличия
+                                от&nbsp;соответствующего оригинала. Фаска по&nbsp;периметру в&nbsp;отдельных
+                                вариантах исполнения
+                                придаёт покрытию объём и&nbsp;рельеф.
+                            </span>
+                            <span>
+                                Ламинат SPC обладает высокими характеристиками износостойкости, звуко&nbsp;—
+                                и&nbsp;теплоизоляции. В&nbsp;зависимости от&nbsp;толщины защитного слоя
+                                (от&nbsp;0,3&nbsp;до&nbsp;0,7&nbsp;мм), этот
+                                материал имеет разные классы нагрузки (от&nbsp;31&nbsp;до&nbsp;34). Он&nbsp;подходит
+                                для&nbsp;укладки
+                                на&nbsp;системы тёплого пола и&nbsp;в&nbsp;помещениях, где&nbsp;предполагается
+                                высокий уровень влажности
+                                в&nbsp;процессе эксплуатации. Водопоглощение&nbsp;— не&nbsp;более 0,03%.
+                            </span>
+                            <span>
+                                Ламинат SPC называют «каменным» потому, что&nbsp;его&nbsp;основа содержит
+                                карбонатно-кальциевую добавку, которая придаёт ему&nbsp;жёсткость и&nbsp;прочность.
+                                Эта&nbsp;добавка уменьшает расширение и&nbsp;сжатие материала при&nbsp;изменении
+                                температуры
+                                и&nbsp;влажности. Она&nbsp;выполняет функции армирования, что&nbsp;улучшает
+                                стойкость к&nbsp;статическим
+                                и&nbsp;динамическим нагрузкам.
+                            </span>
+                            <span>
+                                Ламинат SPC устанавливается при&nbsp;помощи замковой системы Click.
+                                Она&nbsp;обеспечивает
+                                надёжное соединение планок без&nbsp;использования клея. Укладка ламината SPC
+                                не&nbsp;требует
+                                специальных навыков и&nbsp;инструментов. Для&nbsp;её&nbsp;выполнения необходимо
+                                подготовить ровное
+                                основание (бетонное, деревянное или&nbsp;старое покрытие) и&nbsp;подложку. Укладка
+                                ламината
+                                SPC может быть выполнена разными способам: параллельно стене, по&nbsp;диагонали
+                                или&nbsp;с&nbsp;узором.
+                            </span>
+                            <span>
+                                Это&nbsp;современное напольное покрытие, которое сочетает в&nbsp;себе красоту,
+                                практичность
+                                и&nbsp;долговечность. Компания ООО&nbsp;«ДАРСТРОЙ» предлагает качественный ламинат
+                                SPC
+                                по&nbsp;доступным ценам с&nbsp;оформлением гарантийных обязательств.
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer-offer">
+                    <div class="_customer-offer__container">
+                        <div class="_customer-offer__title">
+                            <h2>
+                                Мы предлагаем
+                            </h2>
+                        </div>
+                        <div class="_customer-offer__grid _customer-grid">
+                            <div class="_customer-grid__container">
+                                <div class="_customer-grid__item _customer-grid__item--1">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466359/content_props_logo-1.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Дуб Alpine Floor Expressive Американское Ранчо Eco 10-6
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                3&nbsp;850 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_188349230'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="/contacts" data-company-name="ДАРСТРОЙ"
+                                                data-company-name-rest="ООО"
+                                                data-image-url="https://st25.stpulscen.ru/images/product/356/103/334_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;188349230&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Дуб Alpine Floor Expressive Американское Ранчо Eco 10-6"
+                                                data-qty-with-measure="" data-retail-price="3 850 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_188349230'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:188349230,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st25.stpulscen.ru/images/product/356/103/334_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;188349230&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="188349230"
+                                                data-product-title="Ламинат SPC Дуб Alpine Floor Expressive Американское Ранчо Eco 10-6"
+                                                data-qty-with-measure="" data-retail-price="3 850 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--2">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466360/content_props_logo-2.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Stone Floor Дуб Терра 10013 водостойкий
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                1&nbsp;189 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_125445898'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="/contacts" data-company-name="ДАРСТРОЙ"
+                                                data-company-name-rest="ООО"
+                                                data-image-url="https://st15.stpulscen.ru/images/product/225/189/216_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;125445898&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Stone Floor Дуб Терра 10013 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 550 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_125445898'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st15.stpulscen.ru/images/product/225/189/216_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;125445898&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Stone Floor Дуб Терра 10013 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 550 руб./кв.м"
+                                                data-type="product" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--3">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466361/content_props_logo-3.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC SKALLA Standart Дуб Лердал (Oak Laerdal) водостойкий
+                                                ST303
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;190 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_191239131'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st41.stpulscen.ru/images/product/364/115/635_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;191239131&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC SKALLA Standart Дуб Лердал (Oak Laerdal) водостойкий ST303"
+                                                data-qty-with-measure="" data-retail-price="2 190 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_191239131'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:191239131,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st41.stpulscen.ru/images/product/364/115/635_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;191239131&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="191239131"
+                                                data-product-title="Ламинат SPC SKALLA Standart Дуб Лердал (Oak Laerdal) водостойкий ST303"
+                                                data-qty-with-measure="" data-retail-price="2 190 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--4">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466362/content_props_logo-4.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC PROFIELD Residence Stone Терразо антик водостойкий
+                                                JC6522-3
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                1&nbsp;807 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_191369637'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st41.stpulscen.ru/images/product/364/650/252_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;191369637&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC PROFIELD Residence Stone Терразо антик водостойкий JC6522-3"
+                                                data-qty-with-measure="" data-retail-price="1 807 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_191369637'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:191369637,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st41.stpulscen.ru/images/product/364/650/252_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;191369637&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="191369637"
+                                                data-product-title="Ламинат SPC PROFIELD Residence Stone Терразо антик водостойкий JC6522-3"
+                                                data-qty-with-measure="" data-retail-price="1 807 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--5">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466363/content_props_logo-5.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Zeta SPC La Casa LS240-2 Генуя 4&nbsp;мм
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;150 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_198759443'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st6.stpulscen.ru/images/product/379/059/875_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;198759443&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Zeta SPC La Casa LS240-2 Генуя 4 мм"
+                                                data-qty-with-measure="" data-retail-price="2 150 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_198759443'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:198759443,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st6.stpulscen.ru/images/product/379/059/875_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;198759443&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="198759443"
+                                                data-product-title="Ламинат SPC Zeta SPC La Casa LS240-2 Генуя 4 мм"
+                                                data-qty-with-measure="" data-retail-price="2 150 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--6">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466364/content_props_logo-6.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC FloorFactor Classic Oak russet sic 16 водостойкий
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;400 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_208069347'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st6.stpulscen.ru/images/product/376/652/081_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208069347&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC FloorFactor Classic Oak russet sic 16 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 550 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_208069347'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:208069347,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st6.stpulscen.ru/images/product/376/652/081_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208069347&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="208069347"
+                                                data-product-title="Ламинат SPC FloorFactor Classic Oak russet sic 16 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 550 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--7">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466365/content_props_logo-7.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC CronaFloor Дуб Ампир водостойкий
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                1&nbsp;602 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_173232286'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st21.stpulscen.ru/images/product/318/680/022_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;173232286&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC CronaFloor Дуб Ампир водостойкий"
+                                                data-qty-with-measure="" data-retail-price="1 602 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_173232286'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:173232286,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st21.stpulscen.ru/images/product/318/680/022_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;173232286&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="173232286"
+                                                data-product-title="Ламинат SPC CronaFloor Дуб Ампир водостойкий"
+                                                data-qty-with-measure="" data-retail-price="1 602 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--8">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466366/content_props_logo-8.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Bohofloor Boho Aqua Дуб Европейский водостойкий AQ110
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;530 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_208137398'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st13.stpulscen.ru/images/product/396/675/236_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208137398&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Bohofloor Boho Aqua Дуб Европейский водостойкий AQ110"
+                                                data-qty-with-measure="" data-retail-price="2 530 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_208137398'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:208137398,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st13.stpulscen.ru/images/product/396/675/236_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208137398&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="208137398"
+                                                data-product-title="Ламинат SPC Bohofloor Boho Aqua Дуб Европейский водостойкий AQ110"
+                                                data-qty-with-measure="" data-retail-price="2 530 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--9">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466367/content_props_logo-9.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Respect Floor Дуб Белый водостойкий 4201
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;251 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_208181562'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st13.stpulscen.ru/images/product/396/696/115_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208181562&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Respect Floor Дуб Белый водостойкий 4201"
+                                                data-qty-with-measure="" data-retail-price="2 251 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_208181562'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:208181562,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st13.stpulscen.ru/images/product/396/696/115_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208181562&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="208181562"
+                                                data-product-title="Ламинат SPC Respect Floor Дуб Белый водостойкий 4201"
+                                                data-qty-with-measure="" data-retail-price="2 251 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-grid__item _customer-grid__item--10">
+                                    <div class="_customer-grid__item-container">
+                                        <div class="_customer-grid__item-logo">
+                                            <img src="/system/ckeditor_assets/pictures/466368/content_props_logo-10.png"
+                                                alt="" loading="lazy">
+                                        </div>
+                                        <div class="_customer-grid__item-title">
+                                            <h2>
+                                                Ламинат SPC Wonderful LuxeMix Airy Сарсель LX&nbsp;795-4-19
+                                                водостойкий
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-grid__item-price">
+                                            <span>
+                                                2&nbsp;100 руб./кв.м
+                                            </span>
+                                        </div>
+                                        <div class="_customer-grid__item-btn-wrapper">
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_order_208902439'); return true;"
+                                                class="_customer-grid__item-btn apress-button ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st32.stpulscen.ru/images/product/342/610/349_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208902439&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product-title="Ламинат SPC Wonderful LuxeMix Airy Сарсель LX 795-4-19 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 100 руб./кв.м"
+                                                data-type="product" data-wholesale-price="">Заказать</div>
+                                            <div onclick="yaCounter35317360.reachGoal('megasite_page_cart_208902439'); return true;"
+                                                class="_customer-grid__item-btn-cart apress-button ab-order js-apress-order-button js-add-orders-item"
+                                                data-add-orders-item-data="{&quot;dataToAdd&quot;:{&quot;quantity&quot;:1,&quot;subject_id&quot;:208902439,&quot;company_id&quot;:9446913,&quot;measure_unit&quot;:18},&quot;popupWithNewOrdersItemData&quot;:{&quot;customerCartURL&quot;:&quot;https://www.xn--74-6kcp0a3anaik.xn--p1ai/dashboard/customer/cart&quot;}}"
+                                                data-button-type="order_cart" data-company="9446913"
+                                                data-company-contacts-url="https://www.xn--74-6kcp0a3anaik.xn--p1ai/contacts"
+                                                data-company-name="ДАРСТРОЙ" data-company-name-rest="ООО"
+                                                data-image-url="https://st32.stpulscen.ru/images/product/342/610/349_thumb.jpg"
+                                                data-params="{&quot;product_id&quot;:&quot;208902439&quot;,&quot;company_id&quot;:&quot;9446913&quot;}"
+                                                data-product="208902439"
+                                                data-product-title="Ламинат SPC Wonderful LuxeMix Airy Сарсель LX 795-4-19 водостойкий"
+                                                data-qty-with-measure="" data-retail-price="2 100 руб./кв.м"
+                                                data-type="cart" data-wholesale-price=""><img
+                                                    src="/system/ckeditor_assets/pictures/466369/content_shopping-cart.png"
+                                                    alt="" loading="lazy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a onclick="yaCounter35317360.reachGoal('megasite_page_link_catalog_9286880'); return true;"
+                            target="_blank" class="_customer-more-btn-link" href="/catalog/k-9286880-laminat_spc">
+                            <div class="_customer-more-btn">
+                                Смотреть еще
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="_customer-feedback">
+                    <div class="_customer-feedback__container">
+                        <div class="_customer-feedback__form">
+                            <div class="_customer-feedback__form-container">
+                                <div class="_customer-feedback__form-wrapper">
+                                    <div class="_customer-feedback__form-text">
+                                        <div class="_customer-feedback__form-title">
+                                            <h2>
+                                                Проконсультируем и поможем рассчитать стоимость заказа
+                                            </h2>
+                                        </div>
+                                        <div class="_customer-feedback__form-subitle">
+                                            <h2>
+                                                Оставьте свои контактные данные,
+                                            </h2>
+                                            <h2>
+                                                мы свяжемся с&nbsp;вами в&nbsp;ближайшее время
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="_customer-feedback__form-inputs">
+                                        <div class="_customer-form__inputs">
+                                            <input class="_customer-form__input" id="_customerName" placeholder="ИМЯ"
+                                                required="" type="text" />
+                                            <input class="_customer-form__input" id="_customerPhone"
+                                                placeholder="ТЕЛЕФОН" required="" type="tel" />
+                                            <input class="_customer-form__input" id="_customerEmail" placeholder="ПОЧТА"
+                                                required="" type="email" />
+                                            <textarea class="_customer-form__textarea" id="_customerMessage"
+                                                placeholder="КОММЕНТАРИЙ"></textarea>
+                                        </div>
+                                        <div class="_customer-form__buttons">
+                                            <button
+                                                class="_customer-form__btn _customer-form__btn--submit ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="/contacts" data-company-name="ДАРСТРОЙ"
+                                                data-params='{"company_id":"9446913"}' data-type="message"
+                                                id="_customerSubmit"
+                                                onclick="yaCounter35317360.reachGoal('megasite_page_write_us'); return true;">
+                                                Отправить
+                                            </button>
+                                            <button
+                                                class="_customer-form__btn _customer-form__btn--file ab-order js-apress-order-button js-get-order-form"
+                                                data-company-contacts-url="/contacts" data-company-name="ДАРСТРОЙ"
+                                                data-params='{"company_id":"9446913"}' data-type="message"
+                                                id="_customerFile"
+                                                onclick="yaCounter35317360.reachGoal('megasite_page_write_us'); return true;">
+                                                <img src="/system/ckeditor_assets/pictures/347290/content_form-upload.png"
+                                                    alt="" loading="lazy">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer-form__terms">
+                                    <span>
+                                        Нажимая "Отправить", вы даете согласие на обработку персональных данных в
+                                        соответствии
+                                        <a class="_customer-form__terms--link" href="/confidential" target="_blank">
+                                            c политикой конфиденциальности
+                                        </a>
+                                        и принимаете условия
+                                        <a class="_customer-form__terms--link" href="/terms" target="_blank">
+                                            пользовательского соглашения </a>.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script async>
+    const companyHeader = document.querySelector('.company-header__content')
+    companyHeader.classList.add('_customer-visually-hidden')
+</script>
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script async>
+    let propsSwiper = new Swiper("._customer-props-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 500,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 5000,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        pagination: {
+            el: '._customer-props-swiper__pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+<!-- Form -->
+<script src="/assets/custom_assets/imask.js"></script>
+<script async>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        let setImask = (id) => {
+            let element = document.getElementById(id);
+            let maskOptions = {
+                mask: "+7 (000) 000-00-00",
+                lazy: false,
+            };
+            let mask = new IMask(element, maskOptions);
+        }
+
+        setImask("_customerPhone");
+
+        let _customerInputs = document.querySelectorAll("._customer-form__input");
+        setInterval(() => {
+            _customerInputs.forEach((item) => {
+                if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+                    item.style.outline = "2px solid #ff6e58";
+                }
+                if (item.value && item.value !== "+7 (___) ___-__-__") {
+                    item.style.outline = "2px solid #56c56c";
+                }
+            });
+        }, 1000);
+
+        let _customerSubmitButton = document.getElementById("_customerSubmit");
+        let _customerFileButton = document.getElementById("_customerFile");
+        let _customerFinalMessage = "";
+
+        _customerSubmitButton.disabled = true;
+        _customerFileButton.disabled = true;
+
+
+        let _customerSendForm = () => {
+            if (_customerSubmitButton.disabled !== true) {
+                _customerFinalMessage = `Добрый день!\nМеня зовут ${document.getElementById("_customerName").value}\n${document.getElementById("_customerMessage").value}`;
+            }
+        }
+
+        let formValidate = () => {
+            _customerSubmitButton.disabled =
+                [...document.querySelectorAll("._customer-form__input:required")].filter((element) => element.value === "" || element.value === 0).length !== 0 ? true : false;
+            _customerFileButton.disabled = _customerSubmitButton.disabled == true ? true : false;
+        }
+
+        document.querySelectorAll("._customer-form__input:required").forEach((element) => {
+            element.addEventListener("change", () => formValidate());
+            element.addEventListener("mouseout", () => formValidate());
+        });
+
+        let openWidget = () => {
+            _customerSendForm();
+            setTimeout(() => {
+                document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+                document.querySelector(".js-order-customer-phone-field") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Телефон: " + document.getElementById("_customerPhone").value)
+                    : (document.querySelector(".js-order-customer-phone-field").value = document.getElementById("_customerPhone").value);
+                document.querySelector(".js-input-email-auth") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Почта: " + document.getElementById("_customerEmail").value)
+                    : (document.querySelector(".js-input-email-auth").value = document.getElementById("_customerEmail").value);
+            }, 1000);
+        }
+        _customerSubmitButton.addEventListener("click", (event) => openWidget());
+
+        _customerFileButton.addEventListener("click", (e) => {
+            openWidget();
+            setTimeout(() => {
+                document.getElementById("order_").click();
+            }, 1000);
+        });
+    });
+</script>

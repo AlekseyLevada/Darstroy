@@ -1,0 +1,628 @@
+<style>
+	.custom-company-toolbar {
+		overflow: visible;
+		z-index: 3;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+	}
+
+	.company-site {
+		overflow: visible !important;
+	}
+
+	._customer-toolbar {
+		position: relative;
+		margin: 0;
+		width: 100%;
+		background-color: #ffffff;
+		box-sizing: border-box;
+		height: 55px !important;
+		white-space: nowrap;
+	}
+
+	._customer-toolbar-container {
+		height: 55px !important;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1220px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 10px;
+		align-items: center;
+	}
+
+	._customer-toolbar__left {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	._customer-toolbar__logo {
+		width: 90px !important;
+		height: 50px !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		text-decoration: none;
+	}
+
+	._customer-toolbar__logo-img {
+		margin-right: 20px;
+		width: 90px !important;
+		height: 50px !important;
+		max-width: 99px;
+		max-height: 50px;
+	}
+
+	._customer-toolbar__nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		margin: 0 10px;
+		height: 55px;
+	}
+
+	._customer-toolbar__link {
+		position: relative;
+		text-transform: none !important;
+		padding: 0 10px;
+		margin: 0 !important;
+		text-decoration: none !important;
+		cursor: pointer;
+		box-sizing: border-box;
+		color: #000000 !important;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px !important;
+		text-align: left;
+		height: 55px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	._customer-toolbar__link:hover {
+		cursor: pointer;
+		text-decoration: underline !important;
+	}
+
+	._customer-toolbar__phone-block {
+		box-sizing: border-box;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+
+	._customer-toolbar__phone {
+		color: #000000 !important;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22px;
+		text-align: left;
+		box-sizing: border-box;
+		padding-left: 24px;
+		position: relative;
+		white-space: nowrap;
+		text-decoration: none;
+		margin: 0;
+	}
+
+	._customer-toolbar__phone:nth-of-type(1) {
+		margin: 0 20px !important;
+	}
+
+	._customer-toolbar__phone:before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-image: url("/system/ckeditor_assets/pictures/346861/content_header-phone.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	._customer-toolbar__phone:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	@media (max-width: 1200px) {
+		._customer-toolbar__phone-block {
+			margin: 0 10px;
+		}
+
+		._customer-toolbar__link {
+			padding: 0 5px;
+		}
+
+		._customer-toolbar__mail {
+			padding-left: 20px;
+		}
+
+		._customer-toolbar__phone-block {
+			padding-left: 20px;
+		}
+
+		._customer-toolbar__logo-img {
+			margin-right: 5px;
+		}
+
+		._customer-toolbar__nav {
+			margin: 0 5px 0 0;
+		}
+
+		._customer-toolbar__phone-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+		}
+	}
+
+	@media (max-width: 996px) {
+		.custom-company-toolbar {
+			display: none;
+		}
+	}
+
+	/* Main menu */
+	.horisontal-menu-cover {
+		max-width: 100%;
+		width: 100%;
+		background: #f07c00;
+		position: relative;
+		padding: 0;
+		box-sizing: border-box;
+		margin: 0 auto;
+		height: 62px;
+	}
+
+	.tmpl-company-menu {
+		background-color: #f07c00;
+		background-image: none;
+	}
+
+	.tmpl-company-menu .active,
+	.tmpl-company-menu .active:before,
+	.tmpl-company-menu .hover {
+		background-color: transparent;
+	}
+
+	div.horisontal-menu-cover.tmpl-company-menu.pr {
+		background-color: #f07c00 !important;
+		max-width: 1220px;
+		width: 100%;
+		z-index: 3;
+	}
+
+	.modern-skin .horizontal-menu li:first-child,
+	.modern-skin .horizontal-menu li {
+		border: none !important;
+	}
+
+	.modern-skin .horizontal-menu > li {
+		border-radius: 0 !important;
+		border: none !important;
+		overflow: visible !important;
+		margin: 0 !important;
+		max-width: 100% !important;
+		padding: 0 !important;
+		position: static !important;
+		display: flex !important;
+		flex-grow: 99 !important;
+		flex-direction: row !important;
+		justify-content: center !important;
+		align-items: center !important;
+		flex-wrap: nowrap !important;
+	}
+
+	.horisontal-menu-cover .menu-bg-ie {
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		cursor: default;
+		max-width: 1220px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.horisontal-menu-cover ul.horizontal-menu.clearfix {
+		padding: 0;
+		list-style: none !important;
+		position: relative;
+		margin: 0 !important;
+		max-width: 1220px;
+		width: 100%;
+		flex-shrink: 2;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+		z-index: 3;
+	}
+
+	.horisontal-menu-cover ul.horizontal-menu.clearfix:after {
+		content: none;
+	}
+
+	.modern-skin .horizontal-menu li:not(.company-horizontal-rubricator__item):first-child::before {
+		content: none !important;
+	}
+
+	.horisontal-menu-cover .js-menu-item > *:first-child {
+		position: relative !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+		align-items: center !important;
+		width: auto !important;
+		flex-grow: 99 !important;
+		height: 62px !important;
+		box-sizing: border-box !important;
+		padding: 0 10px !important;
+		color: #000000 !important;
+		font-family: Nunito, sans-serif;
+		font-size: 20px !important;
+		font-weight: 700 !important;
+		font-style: normal !important;
+		letter-spacing: normal !important;
+		line-height: 28px !important;
+		text-align: center !important;
+		text-transform: uppercase !important;
+		text-decoration: none !important;
+		background-color: #f07c00 !important;
+		white-space: nowrap !important;
+		border-radius: 0 !important;
+	}
+
+	.horisontal-menu-cover .js-menu-item:hover > *:first-child,
+	.horisontal-menu-cover .js-menu-item.active > *:first-child,
+	.horisontal-menu-cover .js-menu-item.active:hover > *:first-child {
+		text-decoration: underline !important;
+	}
+
+	.horisontal-menu-cover .js-menu-item a[href$="/catalog"] {
+		padding-left: 34px !important;
+		position: relative !important;
+	}
+
+	.horisontal-menu-cover .js-menu-item a[href$="/catalog"]:before {
+		content: "" !important;
+		display: block !important;
+		width: 20px !important;
+		height: 20px !important;
+		background-image: url("/system/ckeditor_assets/pictures/346860/content_menu-catalog.png") !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		position: absolute !important;
+		top: 21px !important;
+		left: 10px !important;
+	}
+
+	.modern-skin .horizontal-menu li:not(.company-horizontal-rubricator__item):first-child::before {
+		display: none !important;
+	}
+
+	.company-horizontal-rubricator__wrapper {
+		top: 62px !important;
+	}
+
+	.company-horizontal-rubricator__wrapper .company-horizontal-rubricator__more-btn-wrapper a[href$="/catalog"] {
+		padding: 0 12px !important;
+	}
+
+	.company-horizontal-rubricator__wrapper
+		.company-horizontal-rubricator__more-btn-wrapper
+		a[href$="/catalog"]::before {
+		display: none !important;
+	}
+
+	@media (max-width: 1220px) {
+		.horisontal-menu-cover {
+			height: auto;
+		}
+
+		.horisontal-menu-cover ul.horizontal-menu.clearfix {
+			flex-wrap: wrap;
+		}
+	}
+
+	@media (max-width: 1130px) {
+		.horisontal-menu-cover .js-menu-item > *:first-child {
+			font-size: 18px !important;
+		}
+	}
+	/* End Main menu*/
+
+	/* стили меню каталога*/
+	.horisontal-menu-cover .rubric-list-popup {
+		grid-template-rows: repeat(auto-fit, 65px) !important;
+		left: -100px !important;
+		border-top: 0;
+		z-index: 11;
+		top: 62px !important;
+		padding: 10px !important;
+		grid-auto-columns: 310px !important;
+		grid-column-gap: 0 !important;
+		grid-row-gap: 0 !important;
+		box-sizing: border-box !important;
+		max-height: 450px !important;
+		background-color: #f07c00 !important;
+	}
+
+	.horisontal-menu-cover .rubric-list-popup .rlp-item {
+		background-color: transparent;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+
+	.horisontal-menu-cover .rubric-list-popup .rlp-item-content {
+		background-color: transparent !important;
+		color: #000000 !important;
+		font-family: Nunito, sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 28px;
+		text-align: left;
+		white-space: normal;
+		padding: 10px;
+		position: relative;
+		width: 100%;
+		border-radius: 0 !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-transform: none;
+	}
+
+	.horisontal-menu-cover .rubric-list-popup .rlp-item:hover .rlp-item-content {
+		font-weight: 700 !important;
+		text-decoration: underline;
+	}
+
+	/* advantages */
+	._customer-advantages-wrapper {
+		margin: 0 auto;
+		background-color: #aeaeae;
+		background-image: url("/system/ckeditor_assets/pictures/386000/content_content_advant_bg.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-width: 1200px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 80px 60px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	._customer-advantages__title {
+		display: inline-block;
+		position: relative;
+		color: #ffffff;
+		font-family: Nunito, sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 50px !important;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto 62px !important;
+		width: auto;
+	}
+
+	._customer-advantages__title:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #f07c00;
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+	}
+
+	._customer-advantages {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+
+	._customer-advantages__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		margin: 0;
+	}
+
+	._customer-advantages__img-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		position: relative;
+		width: 73px;
+		height: 65px;
+		background-color: transparent;
+		margin-bottom: 20px;
+	}
+
+	._customer-advantages__text {
+		text-transform: uppercase;
+		color: #ffffff;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px !important;
+		margin: 0 !important;
+		text-align: center;
+		font-style: normal;
+		letter-spacing: normal;
+	}
+
+	/* advantages на др страницах */
+
+	.company-product-card-block ._customer-advantages-wrapper,
+	.company-about ._customer-advantages-wrapper {
+		padding: 0;
+		background-color: #ffffff;
+		background-image: none;
+	}
+
+	.company-product-card-block ._customer-advantages,
+	.company-about ._customer-advantages {
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.company-product-card-block ._customer-advantages__title,
+	.company-about ._customer-advantages__title {
+		display: none;
+	}
+
+	.company-product-card-block ._customer-advantages__item,
+	.company-about ._customer-advantages__item {
+		width: calc(50% - 10px);
+		max-width: 600px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		margin: 20px 20px 0 0;
+	}
+
+	.company-product-card-block ._customer-advantages__item:nth-of-type(2n),
+	.company-about ._customer-advantages__item:nth-of-type(2n) {
+		margin: 20px 0 0 0;
+	}
+
+	.company-product-card-block ._customer-advantages__img-block,
+	.company-about ._customer-advantages__img-block {
+		margin: 0 20px 0 0;
+	}
+
+	.company-product-card-block ._customer-advantages__text,
+	.company-about ._customer-advantages__text {
+		text-align: left;
+		color: #000000;
+	}
+
+	.company-product-card-block ._customer-advantages__text br,
+	.company-about ._customer-advantages__text br {
+		display: none;
+	}
+</style>
+<div class="_customer-toolbar">
+	<div class="_customer-toolbar-container">
+		<div class="_customer-toolbar__left">
+			<a class="_customer-toolbar__logo" href="/">
+				<img
+					class="_customer-toolbar__logo-img"
+					src="/system/ckeditor_assets/pictures/346859/content_header-logo.png"
+				/>
+			</a>
+			<div class="_customer-toolbar__nav">
+				<a
+					class="_customer-toolbar__link _customer__text"
+					onclick="yaCounter35317360.reachGoal('megasite_toolbar_link_page_27615'); return true;"
+					href="/pages/27615-o-kompanii"
+				>
+					О компании</a
+				>
+				<a
+					class="_customer-toolbar__link _customer__text"
+					onclick="yaCounter35317360.reachGoal('megasite_toolbar_link_catalog'); return true;"
+					href="/catalog"
+					>Каталог</a
+				>
+				<a
+					class="_customer-toolbar__link _customer__text"
+					onclick="yaCounter35317360.reachGoal('megasite_toolbar_link_contacts'); return true;"
+					href="/contacts"
+					>Контакты</a
+				>
+			</div>
+		</div>
+
+		<div class="_customer-toolbar__phone-block">
+			<a
+				class="_customer-toolbar__phone _customer-toolbar__contacts _customer__text"
+				href="tel:+73517794523"
+				onclick="yaCounter35317360.reachGoal('megasite_toolbar_tel'); return true;"
+				>+7 (351) 779-45-23
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		/* hover меню каталога */
+		document.querySelector(".horizontal-menu").addEventListener("mouseover", (e) => {
+			if (e.target.classList.contains("rlp-item-content")) {
+				for (let a of document.querySelectorAll(".rlp-item-content")) {
+					a.removeAttribute("style");
+				}
+				e.target.setAttribute("style", "font-weight: 700 !important;  text-decoration: underline;");
+			}
+		});
+
+		/* добвление поля поиска в тулбар  */
+		let parent1 = document.querySelector("._customer-toolbar-container");
+		let before1 = document.querySelector("._customer-toolbar__phone-block");
+		let search = document.querySelector("._customer-header ._customer-header__search-form").cloneNode(true);
+		parent1.insertBefore(search, before1);
+
+		/* подсказки в поле поиска */
+		setTimeout(() => {
+			const customSearhForm = document.querySelectorAll(".search-form"),
+				customSearhStyle = document.createElement("style");
+			customSearhStyle.textContent = `.search-form .company-search-hints{display:none}.search-form_opend-hints .company-search-hints{display:block}`;
+			document.querySelector("head").appendChild(customSearhStyle);
+			for (form of customSearhForm) {
+				form.addEventListener("mouseenter", function (e) {
+					e.target.classList.add("search-form_opend-hints");
+				});
+				form.addEventListener("mouseleave", function (e) {
+					e.target.classList.remove("search-form_opend-hints");
+				});
+			}
+		}, 200);
+	});
+</script>

@@ -1,0 +1,851 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700&display=swap');
+        
+    #company-content-wrapper {
+        max-width: 100% !important;
+    }
+
+    .modern-skin .company-content {
+        background: transparent;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .sb-body {
+        padding: 0 !important;
+    }
+
+    .cp-text-wrapper {
+        margin: 0 !important;
+    }
+
+    .modern-skin .ccc-2-3 .s-block {
+        background: transparent;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .company-site {
+        border-radius: 0;
+    }
+
+    .breadcrumbs-slider-wrapper {
+        display: none;
+    }
+
+    .modern-skin .company-content .search-form {
+        display: none;
+    }
+
+    .modern-skin .company-header {
+        height: 0!important;
+        margin: 0!important;
+        line-height: 0!important;
+        text-align: center!important;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0!important;
+        background-color: transparent!important;
+        border-radius: 0!important;
+    }
+
+    .company-page-content .cpc-header,
+    .company-header-title {
+        position: fixed;
+        transform: scale(0);
+    }
+
+    .modern-skin .horisontal-menu-cover {
+        max-width: 100%!important;
+    }
+
+    ._customer-section * {
+        box-sizing: border-box;
+    }
+
+    ._customer-section {
+        box-sizing: border-box;
+    }
+
+    ._customer-section__container {
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /*================================================= intro =================================================*/
+
+    ._customer-intro {
+        padding: 60px 0 55px 0;
+    }
+
+    ._customer-intro__title {
+        display: inline-block;
+        width: auto;
+        font: 700 48px/65px 'Nunito', sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    ._customer-intro__title::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #F07C00;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        border-radius: 4px;
+    }
+
+    /*================================================= payment =================================================*/
+
+    ._customer-payment {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0;
+        background: url('/system/ckeditor_assets/pictures/382912/content_payment-bg.jpg') center top / cover no-repeat;
+    }
+
+    ._customer-payment__items {
+        width: 100%;
+        max-width: 1090px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #ffffff;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 20px 40px 40px 40px;
+    }
+
+    ._customer-payment__item {
+        width: 49%;
+        max-width: 548px;
+        background: linear-gradient(90deg, rgba(240,124,0,1) 50%, rgba(255,212,58,1) 100%);
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 2px;
+        margin: 23px 0 0 0;
+        min-height: 176px;
+    }
+
+    ._customer-payment__item:nth-child(1) {
+        background: #ffffff;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    ._customer-payment__item-inner {
+        width: 100%;
+        background: #ffffff;
+        border-radius: 18px;
+        overflow: hidden;
+        height: 100%;
+        padding: 12px 26px;
+    }
+
+    ._customer-payment__item:nth-child(1) ._customer-payment__item-inner {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    ._customer-payment__title {
+        display: inline-block;
+        width: auto;
+        font: 700 36px/49px 'Nunito', sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 0 46px 0;
+    }
+
+    ._customer-payment__title::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #F07C00;
+        position: absolute;
+        bottom: -22px;
+        left: 0;
+        border-radius: 4px;
+    }
+
+    ._customer-payment__text {
+        font: 400 16px/19px 'Inter', sans-serif;
+        color: #000000;
+    }
+
+    ._customer-payment__heading {
+        display: inline-block;
+        width: auto;
+        font: 500 24px/29px 'Inter', sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 0 25px 0;
+    }
+
+    ._customer-payment__heading::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #8D8D8D;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        border-radius: 4px;
+    }
+
+    ._customer-payment__list {
+        margin: 0!important;
+        list-style: none!important;
+    }
+
+    ._customer-payment__list li {
+        font: 400 16px/19px 'Inter', sans-serif;
+        color: #000000;
+        position: relative;
+        padding: 0 0 0 24px;
+        margin: 0 0 18px 0;
+    }
+
+    ._customer-payment__list li:last-child {
+        margin: 0;
+    }
+
+    ._customer-payment__list li::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 3px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
+    }
+
+    /*================================================= delivery =================================================*/
+
+    ._customer-delivery {
+        padding: 60px 0 0 0;
+    }
+
+    .mobile-page ._customer-delivery {
+        padding: 60px 0;
+    }
+
+    ._customer-map {
+        position: relative;
+        width: 100%;
+        min-height: 403px;
+        padding: 40px 0;
+        margin: 0 0 60px 0;
+    }
+
+    
+    ._customer-map__wrapper {
+        max-width: 1920px;
+        width: 100%;
+        height: 403px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    ._customer-map__block {
+        display: none;
+    }
+
+    ._customer-map__block._customer-active {
+        display: block;
+    }
+
+    ._customer-map__mobile {
+        display: none;
+    }
+
+    ._customer-map__after {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+    ._customer-map__container {
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+
+    ._customer-map__content {
+        background: #ffffff;
+        box-shadow: 0px 8px 24px rgb(0 0 0 / 25%);
+        border-radius: 20px;
+        width: 100%;
+        max-width: 762px;
+        min-height: 323px;
+        padding: 30px;
+        position: relative;
+    }
+
+    ._customer-map__title {
+        display: inline-block;
+        width: auto;
+        font: 700 24px/33px 'Nunito', sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        margin: 0 0 35px 0;
+        position: relative;
+    }
+
+    ._customer-map__title::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #F07C00;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        border-radius: 4px;
+    }
+
+    ._customer-map__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ._customer-map__item {
+        display: flex;
+        width: 48.3%;
+        max-width: 339px;
+        background: linear-gradient(90deg, rgba(240,124,0,1) 50%, rgba(255,212,58,1) 100%);
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    ._customer-map__item._customer-active {
+        filter: drop-shadow(0px 8px 24px rgba(240, 124, 0, 0.18));
+    }
+
+    ._customer-map__item-inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 18px;
+    }
+
+    ._customer-map__address {
+        font: 400 16px/26px 'Inter', sans-serif;
+        color: #000000;
+        padding: 0 0 0 23px;
+        position: relative;
+    }
+
+    ._customer-map__address::before {
+        content: '';
+        width: 14px;
+        height: 16px;
+        background: url('/system/ckeditor_assets/pictures/366438/content_address-icon.png') center center/cover no-repeat;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    ._customer-map__address span {
+        font: 600 16px/26px 'Inter', sans-serif;
+        color: #000000;
+    }
+
+    ._customer-map__time {
+        font: 400 16px/26px 'Inter', sans-serif;
+        color: #000000;
+        padding: 0 0 0 23px;
+        position: relative;
+    }
+
+    ._customer-map__time::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url('/system/ckeditor_assets/pictures/366439/content_time-icon.png') center center/cover no-repeat;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    ._customer-map__time span {
+        font: 600 16px/26px 'Inter', sans-serif;
+        color: #000000;
+    }
+
+    ._customer-delivery__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 28px 0;
+    }
+
+    .mobile-page ._customer-delivery__items {
+        padding: 0;
+    }
+
+    ._customer-delivery__item {
+        width: 100%;
+        max-width: 1200px;
+        background: linear-gradient(90deg, rgba(240,124,0,1) 50%, rgba(255,212,58,1) 100%);
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 3px;
+        box-shadow: 0px 8px 24px rgba(240, 124, 0, 0.16);
+    }
+
+    ._customer-delivery__item-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 36px 37px 36px 39px;
+        background: #ffffff;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    ._customer-delivery__content {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 20px 0 0;
+    }
+
+    ._customer-delivery__heading {
+        display: inline-block;
+        width: auto;
+        font: 700 24px/33px 'Nunito', sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+        position: relative;
+    }
+
+    ._customer-delivery__heading::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #F07C00;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        border-radius: 4px;
+    }
+
+    ._customer-delivery__list {
+        margin: 0!important;
+        list-style: none!important;
+    }
+
+
+    ._customer-delivery__list li {
+        font: 400 16px/26px 'Inter', sans-serif;
+        color: #000000;
+        position: relative;
+        padding: 0 0 0 24px;
+        margin: 0 0 14px 0;
+    }
+
+    ._customer-delivery__list li:last-child {
+        margin: 0;
+    }
+
+    ._customer-delivery__list li::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 3px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
+    }
+
+    
+    ._customer-delivery__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 565px;
+    }
+
+    ._customer-delivery__img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    /*================================================= calc =================================================*/
+
+    ._customer-delivery__calc {
+        width: 100%;
+    }
+
+    /*================================================= @media =================================================*/
+
+    @media screen and (max-width: 1170px) {
+        ._customer-delivery__item-inner {
+            flex-direction: column;
+        }
+
+        ._customer-delivery__content {
+            max-width: 100%;
+            margin: 0 0 25px 0;
+        }
+    }
+
+    @media screen and (max-width: 1090px) {
+        ._customer-map {
+            padding: 0;
+        }
+
+        ._customer-map__wrapper {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-map__desktop {
+            display: none;
+        }
+
+        ._customer-map__mobile {
+            display: block;
+        }
+        
+        ._customer-map__content {
+            max-width: 100%;
+        }
+
+        ._customer-map__item {
+            max-width: 474px;
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        ._customer-intro {
+            padding: 40px 0;
+        }
+
+        ._customer-payment {
+            padding: 40px 0;
+        }
+
+        ._customer-payment__items {
+            padding: 20px 25px 25px 25px;
+        }
+
+        ._customer-map {
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-delivery,
+        .mobile-page ._customer-delivery {
+            padding: 40px 0;
+        }
+
+        ._customer-delivery__items {
+            padding: 0;
+        }
+
+        ._customer-delivery__item-inner {
+            padding: 25px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {        
+        ._customer-payment__item {
+            width: 100%;
+            max-width: 100%;
+            min-height: unset;
+        }
+
+        ._customer-payment__item:nth-child(1) {
+            margin: 0;
+        }
+
+        ._customer-payment__list li br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        ._customer-intro__title {
+            font: 700 42px/54px 'Nunito', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        ._customer-payment__item-inner {
+            padding: 15px 10px;
+        }
+
+        ._customer-payment__title {
+            font: 700 32px/46px 'Nunito', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            margin: 0 auto 48px auto;
+        }
+
+        ._customer-map__content {
+            padding: 25px;
+        }
+
+        ._customer-map__items {
+            flex-direction: column;
+        }
+
+        ._customer-map__item {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 20px 0;
+        }
+
+        ._customer-map__item:last-child {
+            margin: 0;
+        }
+    }
+
+    @media (max-width:500px) {
+        ._customer-delivery__calc iframe {
+            height: 575px;
+        }
+    }
+
+    @media (max-width:360px) {
+        ._customer-delivery__calc iframe {
+            height: 620px;
+        }
+    }
+</style>
+<section class="_customer-section _customer-intro">
+    <div class="_customer-section__container">
+        <div class="_customer-intro__title">
+            Доставка и&nbsp;оплата
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-payment">
+    <div class="_customer-section__container">
+        <div class="_customer-payment__items">
+            <div class="_customer-payment__item">
+                <div class="_customer-payment__item-inner">
+                    <div class="_customer-payment__title">
+                        Способы оплаты
+                    </div>
+                    <div class="_customer-payment__text">
+                        Работаем с физическими и юридическими лицами
+                    </div>
+                </div>
+            </div>
+            <div class="_customer-payment__item">
+                <div class="_customer-payment__item-inner">
+                    <div class="_customer-payment__heading">
+                        Наличный расчет
+                    </div>
+                    <ul class="_customer-payment__list">
+                        <li>Оплата в офисах компании</li>
+                        <li>Заказ доступен от 10 000 рублей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_customer-payment__item">
+                <div class="_customer-payment__item-inner">
+                    <div class="_customer-payment__heading">
+                        Безналичный расчет
+                    </div>
+                    <ul class="_customer-payment__list">
+                        <li>Оплата на расчетный счет компании</li>
+                        <li>Оплата по картам или QR-коду</li>
+                        <li>Заказ доступен от 10 000 рублей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_customer-payment__item">
+                <div class="_customer-payment__item-inner">
+                    <div class="_customer-payment__heading">
+                        Кредит
+                    </div>
+                    <ul class="_customer-payment__list">
+                        <li>Кредит предоставляется банками - Альфа-банк, Сбербанк, Хоумкредит</li>
+                        <li>
+                            Получение возможно при приобретении<br> 
+                            продукции от 100 000 рублей
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-delivery">
+    <div class="_customer-map">
+        <div class="_customer-map__wrapper">
+            <div class="_customer-map__block _customer-active">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A37f0b24b403202440d15629559c0be46f1ced3d9e23da8ec0390d919b94c9cda&amp;source=constructor"
+                    width="100%"
+                    height="403"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    class="_customer-map__desktop"
+                >
+                </iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUZRTHoxC"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    allowfullscreen="true""
+                    class="_customer-map__mobile"
+                >
+                </iframe>
+            </div>
+            <div class="_customer-map__block">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d740d9bee004fde2b192f0821c460892ae417f89b4995a2d2a3820f99da01c6&amp;source=constructor"
+                    width="100%"
+                    height="403"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    class="_customer-map__desktop"
+                >
+                </iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUZRTH1OB"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    allowfullscreen="true""
+                    class="_customer-map__mobile"
+                >
+                </iframe>
+            </div>
+            <div class="_customer-map__after"></div>
+        </div>
+        <div class="_customer-map__container">
+            <div class="_customer-map__content">
+                <div class="_customer-map__title">
+                    Самовывоз
+                </div>
+                <div class="_customer-map__items">
+                    <div class="_customer-map__item _customer-active">
+                        <div class="_customer-map__item-inner">
+                            <div class="_customer-map__address">
+                                <span>г. Челябинск,</span> пл. МОПРА 9, офис 4 Левое крыло, отдельный вход
+                            </div>
+                            <div class="_customer-map__time">
+                                <span>Пн-Пт:</span> 9:00-18:00<br>
+                                Без перерыва<br>
+                                <span>Сб:</span> 10:00-14:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_customer-map__item">
+                        <div class="_customer-map__item-inner">
+                            <div class="_customer-map__address">
+                                <span>г. Челябинск,</span> ул. Чичерина, 23 Рядом с ТК ПРИИСК<br>
+                                (Желтое 16-ти этажное здание)
+                            </div>
+                            <div class="_customer-map__time">
+                                <span>Пн-Пт:</span> 10:00-19:00<br>
+                                Без перерыва<br>
+                                <span>Сб:</span> 10:00-14:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_customer-section__container">
+        <div class="_customer-delivery__items">
+            <div class="_customer-delivery__item">
+                <div class="_customer-delivery__item-inner">
+                    <div class="_customer-delivery__content">
+                        <div class="_customer-delivery__heading">
+                            Доставка транспортными компаниями
+                        </div>
+                        <ul class="_customer-delivery__list">
+                            <li>Осуществляем доставку по России и странам СНГ, в том числе Казахстану</li>
+                            <li>Работаем с любыми ТК, при необходимости, поможем подобрать транспортную компанию, исходя из ситуации</li>
+                            <li>Возможна бесплатная доставка на крупные заказы. Во всех остальных случаях - стоимость согласно тарифам транспортных компаний</li>
+                            <li>Доставка до 10 дней, заказывается напрямую у производителей</li>
+                        </ul>
+                    </div>
+                    <div class="_customer-delivery__calc">
+                        <div class="_customer-delivery__calc-container">
+                            <iframe src="https://calc.pecom.ru/iframe/calculator/?address-from=Россия, Челябинск&intake=1&address-to=Россия, Санкт-Петербург&delivery=1&weight=1&volume=0.01&maxDimension=0.1&declared-amount=100&packing-rigid=0&transportation-type=auto" width="100%" height="560" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- remove basic styles for img -->
+<script>
+	const basicTextBox = document.querySelector(".cpc-text-wrapper");
+
+	if (basicTextBox) {
+		basicTextBox.classList.remove("cpc-text-wrapper");
+	}
+</script>
+<!-- end remove basic styles for img -->
+<script>
+    const tabs = document.querySelectorAll('._customer-map__item'),
+          maps = document.querySelectorAll('._customer-map__block');
+
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', () => {
+            for (let j = 0; j < tabs.length; j++) {
+                tabs[j].classList.remove('_customer-active');
+            }
+            tabs[i].classList.add('_customer-active');
+            for (let j = 0; j < maps.length; j++) {
+                maps[j].classList.remove('_customer-active');
+            }
+            maps[i].classList.add('_customer-active');
+        });
+    }
+
+    let mapAfter = document.querySelectorAll('._customer-map__after');
+
+	mapAfter.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.style.display = 'none';
+        });
+    });
+</script>

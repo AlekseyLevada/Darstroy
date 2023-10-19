@@ -1,0 +1,431 @@
+<style>
+	/* форма */
+	._customer-page-form-wrapper {
+		margin: 0 auto 80px auto;
+		max-width: 1200px;
+		position: relative;
+		background-image: url("/system/ckeditor_assets/pictures/386001/content_content_form-bg.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
+		padding: 60px;
+	}
+
+	._customer-page-form ._customer-order {
+		margin: 0 auto;
+		position: relative;
+		max-width: 1200px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		box-sizing: border-box;
+	}
+
+	._customer-order__text-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		max-width: 417px;
+		width: 100%;
+		margin: 0 40px 0 0;
+	}
+
+	._customer-page-form ._customer-order__title {
+		display: inline-block;
+		position: relative;
+		color: #000000;
+		font-family: Nunito, sans-serif;
+		font-size: 33px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 43px !important;
+		text-align: left;
+		text-transform: uppercase;
+		margin: 0 0 36px 0 !important;
+		width: auto;
+	}
+
+	._customer-page-form ._customer-order__title:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #f07c00;
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+	}
+
+	._customer-order__subtitle {
+		color: #000000;
+		font-family: Inter, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 24px !important;
+		text-align: left;
+		text-transform: none;
+		margin: 0 !important;
+	}
+
+	._customer-order__wrapper {
+		max-width: 676px;
+		width: 100%;
+		margin: 0;
+	}
+
+	._customer-order__wrapper,
+	._customer-order__form {
+		display: block !important;
+	}
+
+	._customer-widget-form__row {
+		display: flex !important;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	._customer-widget-form__row > label {
+		margin: 0 24px 24px 0;
+		width: calc(50% - 12px);
+	}
+
+	._customer-widget-form__row > label:nth-of-type(2n) {
+		margin: 0 0 24px 0;
+	}
+
+	._customer-widget-form__item {
+		border: 2px solid #000000;
+		background-color: #ffffff;
+		border-radius: 4px;
+		max-width: 326px;
+		width: 100%;
+		height: 51px;
+		box-sizing: border-box;
+		outline: none;
+		padding: 16px !important;
+		color: #8d8d8d;
+		font-family: Inter, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 26px !important;
+		text-align: left;
+		text-transform: uppercase;
+		display: flex !important;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+
+	._customer-widget-form__textarea ._customer-widget-form__item {
+		padding: 10px 16px 16px !important;
+	}
+
+	._customer-widget-form__item:required,
+	._customer-widget-form__item::-webkit-input-placeholder,
+	._customer-widget-form__item::-moz-placeholder,
+	._customer-widget-form__item:-moz-placeholder,
+	._customer-widget-form__item:-ms-input-placeholder {
+		color: #8d8d8d !important;
+	}
+
+	._customer-button._customer-file__upload {
+		background-color: #ffffff;
+		height: 59px !important;
+		max-height: 59px !important;
+		min-height: 59px !important;
+		transition: none !important;
+		max-width: 329px;
+		width: calc(50% - 12px);
+		min-width: auto !important;
+		border-radius: 4px !important;
+		color: #ffffff !important;
+		box-sizing: border-box;
+		border: 4px solid #f07c00 !important;
+		font-family: Inter, sans-serif !important;
+		font-size: 20px !important;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		margin: 16px 0 0 0;
+	}
+
+	._customer-button._customer-file__upload:hover {
+		background-color: #f07c00 !important;
+		cursor: pointer;
+	}
+
+	._customer-widget-form__submit {
+		background-color: #f07c00;
+		height: 59px !important;
+		max-height: 59px !important;
+		min-height: 59px !important;
+		transition: none !important;
+		max-width: 329px;
+		width: calc(50% - 12px);
+		min-width: auto !important;
+		border-radius: 4px !important;
+		color: #ffffff !important;
+		box-sizing: border-box;
+		border: 4px solid #f07c00 !important;
+		font-family: Inter, sans-serif !important;
+		font-size: 20px !important;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		margin: 16px 24px 0 0;
+	}
+
+	._customer-widget-form__submit:hover {
+		background-color: #ffffff !important;
+		color: #000000 !important;
+		cursor: pointer;
+	}
+
+	._customer-order ._customer-widget-form__submit:disabled,
+	._customer-order ._customer-widget-form__submit:disabled:hover,
+	._customer-button._customer-file__upload:disabled,
+	._customer-button._customer-file__upload:disabled:hover {
+		border: 1px solid #f0f0f0 !important;
+		background-color: #f0f0f0 !important;
+		box-shadow: none;
+		color: #333 !important;
+		cursor: not-allowed;
+	}
+</style>
+<div class="_customer-page-form-wrapper">
+	<div class="_customer-page-form">
+		<div class="_customer-order">
+			<div class="_customer-order__text-block">
+				<h2 class="_customer-order__title">Проконсультируем и поможем рассчитать стоимость заказа</h2>
+				<p class="_customer-order__subtitle">
+					Оставьте свои контактные данные, <br />
+					мы свяжемся с вами в ближайшее время
+				</p>
+			</div>
+			<div class="_customer-order__wrapper">
+				<div class="_customer-order__form _customer-widget-form">
+					<div class="_customer-widget-form__row">
+						<label>
+							<input
+								class="_customer-widget-form__item"
+								id="_customerName"
+								type="text"
+								required
+								placeholder="имя"
+							/>
+						</label>
+						<label>
+							<input
+								class="_customer-widget-form__item"
+								id="_customerPhone"
+								type="tel"
+								required
+								placeholder="телефон"
+							/>
+						</label>
+						<label>
+							<input
+								class="_customer-widget-form__item"
+								id="_customerEmail"
+								type="email"
+								required
+								placeholder="почта"
+							/>
+						</label>
+						<label class="_customer-widget-form__textarea">
+							<textarea
+								class="_customer-widget-form__item"
+								id="_customerMessage"
+								placeholder="комментарий"
+							></textarea>
+						</label>
+					</div>
+					<div class="_customer-widget-form__row">
+						<button
+							id="_customerSubmit"
+							class="_customer-button _customer-widget-form__submit ab-order js-apress-order-button js-get-order-form"
+							data-company-contacts-url="/contacts"
+							data-company-name="ДАРСТРОЙ"
+							data-params='{"company_id":"9446913"}'
+							data-type="message"
+							onclick="yaCounter35317360.reachGoal('megasite_mainpage_wright_us'); return true;"
+							disabled=""
+						>
+							<span>Отправить</span>
+						</button>
+						<button
+							id="_customerFile"
+							class="_customer-button _customer-file__upload ab-order js-apress-order-button js-get-order-form"
+							data-company-contacts-url="/contacts"
+							data-company-name="ДАРСТРОЙ"
+							data-params='{"company_id":"9446913"}'
+							data-type="message"
+							onclick="yaCounter35317360.reachGoal('megasite_mainpage_wright_us'); return true;"
+							disabled=""
+						>
+							<img src="/system/ckeditor_assets/pictures/347290/content_form-upload.png" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="_customer-advantages-wrapper">
+	<div class="_customer-advantages__title">наши преимущества</div>
+	<div class="_customer-advantages">
+		<div class="_customer-advantages__item">
+			<div class="_customer-advantages__img-block">
+				<img
+					class="_customer-advantages__img"
+					src="/system/ckeditor_assets/pictures/347295/content_advant_1.png"
+				/>
+			</div>
+			<p class="_customer-advantages__text">
+				Более 10500 <br />
+				наименований <br />
+				продукции
+			</p>
+		</div>
+		<div class="_customer-advantages__item">
+			<div class="_customer-advantages__img-block">
+				<img
+					class="_customer-advantages__img"
+					src="/system/ckeditor_assets/pictures/347296/content_advant_2.png"
+				/>
+			</div>
+			<p class="_customer-advantages__text">
+				Доставка точно <br />
+				в срок по всей <br />
+				России и <br />
+				Казахстану
+			</p>
+		</div>
+		<div class="_customer-advantages__item">
+			<div class="_customer-advantages__img-block">
+				<img
+					class="_customer-advantages__img"
+					src="/system/ckeditor_assets/pictures/347297/content_advant_3.png"
+				/>
+			</div>
+			<p class="_customer-advantages__text">
+				Предоставляем <br />
+				образцы в <br />
+				магазинах и на <br />
+				e-mail
+			</p>
+		</div>
+		<div class="_customer-advantages__item">
+			<div class="_customer-advantages__img-block">
+				<img
+					class="_customer-advantages__img"
+					src="/system/ckeditor_assets/pictures/347298/content_advant_4.png"
+				/>
+			</div>
+			<p class="_customer-advantages__text">
+				Монтаж любого <br />
+				напольного <br />
+				покрытия
+			</p>
+		</div>
+	</div>
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		/* форма */
+		const _customerSubmitButton = document.querySelector("#_customerSubmit"),
+			_customerFileButton = document.querySelector("#_customerFile");
+		_customerSubmitButton.disabled = true;
+		_customerFileButton.disabled = true;
+		let _customerFinalMessage = "";
+
+		function _customerSendForm() {
+			if (_customerSubmitButton.disabled !== true) {
+				_customerFinalMessage = `Добрый день!\nМеня зовут ${document.querySelector("#_customerName").value}\n${
+					document.querySelector("#_customerMessage").value
+				}`;
+			}
+		}
+
+		function formValidate() {
+			if (event.target.value !== "") {
+				event.target.style.borderColor = "#c2c2c2";
+			} else {
+				event.target.style.borderColor = "#e31e24";
+			}
+			_customerSubmitButton.disabled =
+				[...document.querySelectorAll("._customer-widget-form__item:required")].filter(
+					(element) => element.value === "" || element.value === 0
+				).length !== 0
+					? true
+					: false;
+			_customerFileButton.disabled = _customerSubmitButton.disabled == true ? true : false;
+		}
+
+		document.querySelectorAll("._customer-widget-form__item:required").forEach((element) => {
+			element.addEventListener("change", () => {
+				formValidate();
+			});
+			element.addEventListener("mouseout", () => {
+				formValidate();
+			});
+		});
+
+		function openWidget() {
+			_customerSendForm();
+			setTimeout(() => {
+				document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+				document.querySelector(".js-order-customer-phone-field") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Телефон: " + document.querySelector("#_customerPhone").value)
+					: (document.querySelector(".js-order-customer-phone-field").value =
+							document.querySelector("#_customerPhone").value);
+				document.querySelector(".js-input-email-auth") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+					: (document.querySelector(".js-input-email-auth").value =
+							document.querySelector("#_customerEmail").value);
+			}, 1000);
+		}
+
+		_customerSubmitButton.addEventListener("click", function (event) {
+			openWidget();
+		});
+		_customerFileButton.addEventListener("click", function (e) {
+			openWidget();
+			setTimeout(() => {
+				document.getElementById("order_").click();
+			}, 1000);
+		});
+	});
+</script>
